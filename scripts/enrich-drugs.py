@@ -143,9 +143,17 @@ class Backend:
 
 class GeminiBackend(Backend):
     name = 'gemini'
-    DEFAULT_MODEL = 'gemini-2.5-flash'
+    # Her modelin ayrı günlük kotası var. Bir model dolunca otomatik
+    # bir sonrakine geçilir (rotate_models=True ile).
+    DEFAULT_MODEL = 'gemini-2.5-flash-lite'
+    FREE_MODEL_POOL = [
+        'gemini-2.5-flash-lite',
+        'gemini-3.1-flash-lite',
+        'gemini-flash-lite-latest',
+        'gemini-3.5-flash',
+    ]
 
-    def __init__(self, model: str):
+    def __init__(self, model: str, rotate_models: bool = False):
         # google.genai yoksa google.generativeai'ye düş (eski SDK)
         try:
             from google import genai as new_genai
@@ -161,37 +169,82 @@ class GeminiBackend(Backend):
         if not api_key:
             print('GOOGLE_API_KEY tanımlı değil. https://aistudio.google.com adresinden alın.')
             sys.exit(1)
+        self._api_key = api_key
         self.model_name = model or self.DEFAULT_MODEL
+        self.rotate_models = rotate_models
+        # Rotation listesi: kullanıcı verdiği model + diğer free modeller
+        if rotate_models:
+            self._model_queue = [self.model_name] + [m for m in self.FREE_MODEL_POOL if m != self.model_name]
+            self._exhausted = set()
+        else:
+            self._model_queue = [self.model_name]
+            self._exhausted = set()
         if self._mode == 'new':
             self._client = new_genai.Client(api_key=api_key)
         else:
             old_genai.configure(api_key=api_key)
             self._client = old_genai.GenerativeModel(self.model_name, system_instruction=SYSTEM_PROMPT)
 
+    def _is_daily_quota_error(self, err: Exception) -> bool:
+        """retryDelay > 60s ise günlük quota dolmuş demektir (RPM değil RPD)."""
+        s = str(err)
+        m = re.search(r'retryDelay[\'":\s]+(\d+)', s)
+        if m:
+            return int(m.group(1)) > 60
+        return '429' in s and ('RESOURCE_EXHAUSTED' in s or 'limit: 0' in s)
+
+    def _try_rotate(self, err: Exception) -> bool:
+        """Daily quota dolmuşsa bir sonraki modele geç. True dönerse devam edilebilir."""
+        if not self.rotate_models or not self._is_daily_quota_error(err):
+            return False
+        self._exhausted.add(self.model_name)
+        for m in self._model_queue:
+            if m not in self._exhausted:
+                self.model_name = m
+                print(f'  >> Model degisti: {m} (kalan: {len(self._model_queue) - len(self._exhausted)})')
+                return True
+        return False
+
     def generate(self, system: str, user: str) -> str:
-        if self._mode == 'new':
-            from google.genai import types
-            resp = self._client.models.generate_content(
-                model=self.model_name,
-                contents=user,
-                config=types.GenerateContentConfig(
-                    system_instruction=system,
-                    temperature=0.2,
-                    max_output_tokens=4000,
-                    response_mime_type='application/json',
-                ),
-            )
-            return resp.text or ''
-        else:
-            resp = self._client.generate_content(
-                user,
-                generation_config={
-                    'temperature': 0.2,
-                    'max_output_tokens': 4000,
-                    'response_mime_type': 'application/json',
-                },
-            )
-            return resp.text
+        last_err = None
+        for _ in range(len(self._model_queue) + 1):
+            try:
+                if self._mode == 'new':
+                    from google.genai import types
+                    resp = self._client.models.generate_content(
+                        model=self.model_name,
+                        contents=user,
+                        config=types.GenerateContentConfig(
+                            system_instruction=system,
+                            temperature=0.2,
+                            max_output_tokens=4000,
+                            response_mime_type='application/json',
+                        ),
+                    )
+                    return resp.text or ''
+                else:
+                    resp = self._client.generate_content(
+                        user,
+                        generation_config={
+                            'temperature': 0.2,
+                            'max_output_tokens': 4000,
+                            'response_mime_type': 'application/json',
+                        },
+                    )
+                    return resp.text
+            except Exception as e:
+                last_err = e
+                if not self._try_rotate(e):
+                    raise
+                # Eski SDK kullanılıyorsa modeli yeniden oluştur
+                if self._mode == 'old':
+                    try:
+                        import google.generativeai as old_genai
+                        self._client = old_genai.GenerativeModel(self.model_name, system_instruction=SYSTEM_PROMPT)
+                    except Exception:
+                        pass
+        if last_err:
+            raise last_err
 
 
 class OllamaBackend(Backend):
@@ -260,9 +313,9 @@ class AnthropicBackend(Backend):
         return resp.content[0].text
 
 
-def make_backend(name: str, model: str) -> Backend:
+def make_backend(name: str, model: str, rotate_models: bool = False) -> Backend:
     name = (name or 'gemini').lower()
-    if name == 'gemini':    return GeminiBackend(model)
+    if name == 'gemini':    return GeminiBackend(model, rotate_models=rotate_models)
     if name == 'ollama':    return OllamaBackend(model)
     if name == 'anthropic': return AnthropicBackend(model)
     print(f'Bilinmeyen backend: {name}')
@@ -426,6 +479,10 @@ def main():
                     help='Cross-check için ikincil model (varsayılan: gemini-2.5-flash-lite)')
     ap.add_argument('--daemon', action='store_true',
                     help='Süresiz çalıştır, quota dolunca reset saatine kadar uyu, otomatik devam et')
+    ap.add_argument('--rotate-models', action='store_true', default=True,
+                    help='Bir model quota dolduğunda diğer free modellere otomatik geç (varsayılan: açık)')
+    ap.add_argument('--no-rotate', dest='rotate_models', action='store_false',
+                    help='Model rotasyonu kapat (tek model kullan)')
     args = ap.parse_args()
 
     if not LITE_PATH.exists():
@@ -436,8 +493,8 @@ def main():
     if args.sleep is None:
         args.sleep = {'gemini': 4.0, 'ollama': 0.0, 'anthropic': 0.3}[args.backend]
 
-    backend = make_backend(args.backend, args.model)
-    print(f'Backend: {backend.name}  Model: {backend.model_name}  Sleep: {args.sleep}s')
+    backend = make_backend(args.backend, args.model, rotate_models=args.rotate_models)
+    print(f'Backend: {backend.name}  Model: {backend.model_name}  Sleep: {args.sleep}s  Rotate: {args.rotate_models}')
 
     lite = json.loads(LITE_PATH.read_text(encoding='utf-8'))
     lite_drugs = lite['drugs']
