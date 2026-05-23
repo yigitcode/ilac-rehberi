@@ -58,8 +58,15 @@
   function search(fuse, query, limit) {
     const q = normalize(query).trim();
     if (q.length < 2) return [];
-    const results = fuse.search(q, { limit: limit || 30 });
-    return results.map((r) => stripNorm(r.item));
+    // Pull more than requested so verified picks survive the post-sort cutoff.
+    const raw = fuse.search(q, { limit: (limit || 30) * 2 });
+    raw.sort((a, b) => {
+      const av = a.item.verified === true ? 0 : 1;
+      const bv = b.item.verified === true ? 0 : 1;
+      if (av !== bv) return av - bv;            // verified first
+      return (a.score || 0) - (b.score || 0);   // then by Fuse score
+    });
+    return raw.slice(0, limit || 30).map((r) => stripNorm(r.item));
   }
 
   function stripNorm(drug) {

@@ -1,5 +1,5 @@
 /* Service worker — app shell precache + cache-first for offline. */
-const CACHE_VERSION = 'v6-2026-05-23';
+const CACHE_VERSION = 'v7-2026-05-23';
 const APP_SHELL_CACHE = 'ilac-shell-' + CACHE_VERSION;
 const DATA_CACHE = 'ilac-data-' + CACHE_VERSION;
 
