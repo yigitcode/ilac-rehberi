@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="description" content="Hemşireler için hızlı ilaç bilgi rehberi">
+
+  <!-- iOS PWA support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="İlaç Rehberi">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>İlaç Rehberi</title>
+</head>
+<body>
+  <div id="test-banner" role="alert">
+    TEST VERİSİ — KLİNİK KARAR İÇİN KULLANMAYIN
+  </div>
+
+  <header id="app-header">
+    <button id="back-btn" type="button" aria-label="Geri" hidden>&larr;</button>
+    <h1 id="app-title">İlaç Rehberi</h1>
+  </header>
+
+  <main id="app-main">
+    <!-- Search view -->
+    <section id="search-view" class="view">
+      <div class="search-box">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="İlaç adı veya etken madde..."
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          autofocus
+          aria-label="İlaç ara">
+      </div>
+      <div id="search-status" class="search-status" aria-live="polite"></div>
+      <ul id="results" class="results"></ul>
+    </section>
+
+    <!-- Detail view -->
+    <section id="detail-view" class="view" hidden>
+      <article id="detail-content"></article>
+    </section>
+  </main>
+
+  <footer id="app-footer">
+    <p class="disclaimer">
+      Bu uygulama bilgilendirme amaçlıdır. Klinik kararlarınız için her zaman resmi KÜB ve hekim/eczacı görüşü esastır.
+    </p>
+  </footer>
+
+  <script src="vendor/idb.js"></script>
+  <script src="vendor/fuse.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

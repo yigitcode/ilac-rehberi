@@ -1,0 +1,4160 @@
+{
+  "version": "0.3.0-test",
+  "generatedAt": "2026-05-23",
+  "notice": "TEST VERİSİDİR. Klinik karar için kullanılmamalıdır. Resmi KÜB için titck.gov.tr",
+  "drugs": [
+    {
+      "id": "parol",
+      "tradeName": "Parol",
+      "otherTradeNames": [
+        "Paraserol",
+        "Tylol",
+        "Vermidon (kombine)",
+        "Calpol",
+        "Termalgine",
+        "Setamol"
+      ],
+      "activeIngredient": "Parasetamol",
+      "atc": "N02BE01",
+      "form": "Tablet / Şurup",
+      "strength": "500 mg tablet, 120 mg/5 mL şurup",
+      "indications": [
+        "Hafif-orta şiddette ağrı",
+        "Ateş düşürücü"
+      ],
+      "contraindications": [
+        "Parasetamol aşırı duyarlılığı",
+        "Ciddi karaciğer yetmezliği"
+      ],
+      "dosage": {
+        "adult": "500-1000 mg, 4-6 saatte bir. Max 4 g/gün",
+        "pediatric": "10-15 mg/kg/doz, 4-6 saatte bir. Max 60 mg/kg/gün",
+        "renal": "GFR <30 için doz aralığı 6 saate uzatılır",
+        "hepatic": "Karaciğer yetmezliğinde dikkatli, doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Genelde iyi tolere edilir"
+        ],
+        "serious": [
+          "Hepatotoksisite (yüksek dozda)",
+          "Cilt reaksiyonları (Stevens-Johnson)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Uzun süreli yüksek doz INR artırabilir"
+        },
+        {
+          "drug": "Alkol",
+          "note": "Hepatotoksisite riski artar"
+        }
+      ],
+      "antidote": "N-asetilsistein (NAC) — overdoz için",
+      "pregnancy": "B — gebelikte tercih edilen analjezik",
+      "breastfeeding": "Uyumlu, anne sütüne az geçer",
+      "storage": "25°C altında, kuru yerde",
+      "notes": "En sık overdoz nedeni. 7,5 g üzeri akut alımda NAC değerlendirilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "aspirin",
+      "tradeName": "Aspirin",
+      "otherTradeNames": [
+        "Babyprin",
+        "Asin",
+        "Ataspin"
+      ],
+      "activeIngredient": "Asetilsalisilik asit (ASA)",
+      "atc": "B01AC06",
+      "form": "Tablet",
+      "strength": "100 mg, 300 mg, 500 mg",
+      "indications": [
+        "Antiplatelet (kardiyovasküler koruma)",
+        "Ağrı, ateş",
+        "Akut koroner sendrom"
+      ],
+      "contraindications": [
+        "Aktif peptik ülser",
+        "Hemorajik diyatez",
+        "16 yaş altı viral enfeksiyon (Reye sendromu)",
+        "Aspirin alerjisi"
+      ],
+      "dosage": {
+        "adult": "Antiplatelet: 75-100 mg/gün. AKS yükleme: 300 mg çiğneyerek. Analjezik: 300-1000 mg, 4-6 saatte bir",
+        "pediatric": "Önerilmez (Reye sendromu riski). Kawasaki istisnadır.",
+        "renal": "GFR <10'da kaçınılır",
+        "hepatic": "Ciddi yetmezlikte kontrendike"
+      },
+      "sideEffects": {
+        "common": [
+          "Mide rahatsızlığı",
+          "Bulantı"
+        ],
+        "serious": [
+          "GİS kanama",
+          "Hemorajik inme",
+          "Anafilaksi",
+          "Bronkospazm (astımlılarda)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Kanama riski belirgin artar"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "MTX toksisitesi artar"
+        },
+        {
+          "drug": "İbuprofen",
+          "note": "Antiplatelet etkiyi azaltabilir"
+        }
+      ],
+      "antidote": "Spesifik antidot yok. Aktif kömür (1 saat içinde), alkalinizasyon (NaHCO3), hemodiyaliz (ağır vakalarda)",
+      "pregnancy": "C (3. trimesterde D — duktus arteriosus erken kapanması)",
+      "breastfeeding": "Yüksek doz kaçınılır",
+      "storage": "25°C altında, nemden korunur",
+      "notes": "AKS şüphesinde 300 mg çiğnetilir. Çocuklarda Reye sendromu riski.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "majezik",
+      "tradeName": "Majezik",
+      "otherTradeNames": [
+        "Maxiflam",
+        "Flugalin"
+      ],
+      "activeIngredient": "Flurbiprofen",
+      "atc": "M01AE09",
+      "form": "Film tablet",
+      "strength": "100 mg",
+      "indications": [
+        "Kas-iskelet ağrıları",
+        "Dismenore",
+        "Postoperatif ağrı"
+      ],
+      "contraindications": [
+        "Aktif peptik ülser",
+        "Ciddi kalp/böbrek/karaciğer yetmezliği",
+        "NSAİİ aşırı duyarlılığı",
+        "Gebelik 3. trimester"
+      ],
+      "dosage": {
+        "adult": "100 mg, günde 2-3 kez. Max 300 mg/gün",
+        "pediatric": "12 yaş altında önerilmez",
+        "renal": "Orta-ileri yetmezlikte kaçınılır",
+        "hepatic": "Dikkatli kullanım"
+      },
+      "sideEffects": {
+        "common": [
+          "Dispepsi",
+          "Bulantı",
+          "Baş dönmesi"
+        ],
+        "serious": [
+          "GİS kanama",
+          "Akut böbrek hasarı",
+          "Hipertansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "ACE inhibitörü/Diüretik",
+          "note": "Böbrek fonksiyon bozukluğu"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Lityum düzeyi artar"
+        }
+      ],
+      "antidote": "Spesifik antidot yok. Aktif kömür, semptomatik tedavi",
+      "pregnancy": "C (3. trimesterde kontrendike)",
+      "breastfeeding": "Düşük doz kısa süre uyumlu",
+      "storage": "25°C altında",
+      "notes": "Yemekle alınması GİS yan etkilerini azaltır.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "voltaren",
+      "tradeName": "Voltaren",
+      "otherTradeNames": [
+        "Dikloron",
+        "Dolorex",
+        "Inflased",
+        "Diclomec",
+        "Cataflam"
+      ],
+      "activeIngredient": "Diklofenak sodyum",
+      "atc": "M01AB05",
+      "form": "Tablet / Ampul / Jel",
+      "strength": "50 mg, 75 mg ampul, 100 mg SR",
+      "indications": [
+        "Akut romatizmal ağrı",
+        "Postoperatif ağrı",
+        "Renal kolik",
+        "Migren"
+      ],
+      "contraindications": [
+        "Aktif GİS kanama",
+        "Ciddi kalp yetmezliği (NYHA III-IV)",
+        "Koroner arter hastalığı",
+        "Aspirin/NSAİİ alerjisi"
+      ],
+      "dosage": {
+        "adult": "Oral: 50 mg 2-3x/gün. IM: 75 mg, günde 1-2 kez. Max 150 mg/gün",
+        "pediatric": "14 yaş altında genelde önerilmez",
+        "renal": "Orta-ileri yetmezlikte kaçınılır",
+        "hepatic": "Aktif karaciğer hastalığında kontrendike"
+      },
+      "sideEffects": {
+        "common": [
+          "Dispepsi",
+          "Baş ağrısı",
+          "Baş dönmesi"
+        ],
+        "serious": [
+          "Miyokard infarktüsü riski",
+          "GİS perforasyon",
+          "Akut böbrek hasarı",
+          "Hepatit"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Kanama riski belirgin"
+        },
+        {
+          "drug": "Lityum/Digoksin",
+          "note": "Düzeyleri artar"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "MTX toksisitesi"
+        }
+      ],
+      "antidote": "Spesifik antidot yok. Destek tedavisi.",
+      "pregnancy": "C (3. trimester D)",
+      "breastfeeding": "Kısa süre uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IM enjeksiyon glutea derininde yapılır. Kardiyovasküler risk değerlendirilmeli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "apranax",
+      "tradeName": "Apranax",
+      "otherTradeNames": [
+        "Anaprox",
+        "Naprosyn",
+        "Naprolag"
+      ],
+      "activeIngredient": "Naproksen sodyum",
+      "atc": "M01AE02",
+      "form": "Film tablet",
+      "strength": "275 mg, 550 mg",
+      "indications": [
+        "İnflamatuar artritler",
+        "Dismenore",
+        "Akut gut",
+        "Migren"
+      ],
+      "contraindications": [
+        "Aktif peptik ülser",
+        "Ciddi kalp/böbrek/karaciğer yetmezliği",
+        "NSAİİ alerjisi"
+      ],
+      "dosage": {
+        "adult": "275-550 mg, 12 saatte bir. Akut atak: 825 mg başlangıç, sonra 275 mg 6-8 saatte bir",
+        "pediatric": "JRA: 10 mg/kg/gün ikiye bölünmüş",
+        "renal": "GFR <30'da kaçınılır",
+        "hepatic": "Dikkatli kullanım"
+      },
+      "sideEffects": {
+        "common": [
+          "Dispepsi",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "GİS kanama",
+          "Böbrek yetmezliği",
+          "Trombotik olaylar"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Antikoagülanlar",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "SSRI",
+          "note": "GİS kanama riski artar"
+        }
+      ],
+      "antidote": "Aktif kömür, semptomatik tedavi",
+      "pregnancy": "C (3. trimester D)",
+      "breastfeeding": "Anne sütüne az geçer, kısa süreli uyumlu",
+      "storage": "25°C altında",
+      "notes": "NSAİİ'ler arasında kardiyovasküler risk profili nispeten daha iyi.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "arveles",
+      "tradeName": "Arveles",
+      "otherTradeNames": [
+        "Keskin",
+        "Tartef",
+        "Dexpro"
+      ],
+      "activeIngredient": "Deksketoprofen",
+      "atc": "M01AE17",
+      "form": "Film tablet / Ampul",
+      "strength": "25 mg tablet, 50 mg/2 mL ampul",
+      "indications": [
+        "Akut hafif-orta ağrı",
+        "Dismenore",
+        "Diş ağrısı",
+        "Postoperatif ağrı"
+      ],
+      "contraindications": [
+        "Aktif peptik ülser",
+        "Ciddi kalp/böbrek/karaciğer yetmezliği",
+        "Gebelik 3. trimester"
+      ],
+      "dosage": {
+        "adult": "Oral: 12,5-25 mg, 4-6 saatte bir. Max 75 mg/gün. Parenteral: 50 mg IM/IV, 8-12 saatte bir",
+        "pediatric": "18 yaş altında önerilmez",
+        "renal": "Orta-ileri yetmezlikte kaçınılır",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Karın ağrısı",
+          "Baş dönmesi"
+        ],
+        "serious": [
+          "GİS kanama",
+          "Anafilaksi",
+          "Akut böbrek hasarı"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Düzeyi artar"
+        }
+      ],
+      "antidote": "Aktif kömür, semptomatik tedavi",
+      "pregnancy": "C (3. trimester kontrendike)",
+      "breastfeeding": "Önerilmez",
+      "storage": "25°C altında",
+      "notes": "Hızlı etki başlangıcı için tercih edilebilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "augmentin",
+      "tradeName": "Augmentin",
+      "otherTradeNames": [
+        "Amoklavin",
+        "Bioment",
+        "Klavupen",
+        "Croxilex",
+        "Klamoks"
+      ],
+      "activeIngredient": "Amoksisilin + Klavulanik asit",
+      "atc": "J01CR02",
+      "form": "Film tablet / Süspansiyon / Flakon",
+      "strength": "625 mg, 1000 mg, 457 mg/5 mL süsp, 1,2 g flakon",
+      "indications": [
+        "Üst-alt solunum yolu enfeksiyonları",
+        "İYE",
+        "Cilt-yumuşak doku enfeksiyonları",
+        "Aspirasyon pnömonisi"
+      ],
+      "contraindications": [
+        "Penisilin alerjisi",
+        "Önceden Augmentin'e bağlı kolestatik sarılık"
+      ],
+      "dosage": {
+        "adult": "Oral: 625 mg 8 saatte bir veya 1000 mg 12 saatte bir. IV: 1,2 g 8 saatte bir",
+        "pediatric": "Oral: 25-45 mg/kg/gün (amoksisilin) ikiye bölünmüş. Otitis: 80-90 mg/kg/gün",
+        "renal": "GFR 10-30: doz aralığı uzatılır. <10: günde 1 kez",
+        "hepatic": "Karaciğer fonksiyon takibi"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal",
+          "Bulantı",
+          "Döküntü"
+        ],
+        "serious": [
+          "Anafilaksi",
+          "C. difficile koliti",
+          "Kolestatik hepatit",
+          "Stevens-Johnson"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Allopurinol",
+          "note": "Döküntü riski artar"
+        },
+        {
+          "drug": "Oral kontraseptif",
+          "note": "Etkinlik azalabilir (tartışmalı)"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR artabilir"
+        }
+      ],
+      "antidote": "Spesifik yok. Alerjik reaksiyonda adrenalin + kortikosteroid + antihistaminik",
+      "pregnancy": "B — güvenli kabul edilir",
+      "breastfeeding": "Uyumlu, az miktarda anne sütüne geçer",
+      "storage": "Tablet: 25°C altında. Süspansiyon: sulandırıldıktan sonra buzdolabında 7 gün",
+      "notes": "Yemekle alınması GİS yan etkilerini azaltır.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "cipro",
+      "tradeName": "Cipro",
+      "otherTradeNames": [
+        "Sanset",
+        "Cipronatin",
+        "Ciproktan",
+        "Siprosan"
+      ],
+      "activeIngredient": "Siprofloksasin",
+      "atc": "J01MA02",
+      "form": "Film tablet / Flakon",
+      "strength": "500 mg, 750 mg tablet, 200-400 mg flakon",
+      "indications": [
+        "Komplike İYE",
+        "Bakteriyel gastroenterit",
+        "Pnömoni (atipik)",
+        "Kemik-eklem enfeksiyonu"
+      ],
+      "contraindications": [
+        "Florokinolon alerjisi",
+        "Tendinit/tendon rüptürü öyküsü",
+        "Gebelik",
+        "18 yaş altı (özel endikasyon hariç)"
+      ],
+      "dosage": {
+        "adult": "Oral: 250-750 mg 12 saatte bir. IV: 400 mg 8-12 saatte bir",
+        "pediatric": "Kompleks İYE: 10-20 mg/kg/doz 12 saatte bir (max 750 mg)",
+        "renal": "GFR <30: doz %50 azaltılır",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "İshal",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Tendinit/tendon rüptürü (özellikle Aşil)",
+          "QT uzaması",
+          "C. difficile",
+          "Konvülsiyon",
+          "Aort anevrizması/diseksiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Antasit/Demir/Çinko",
+          "note": "Emilim ciddi azalır, 2 saat ara verin"
+        },
+        {
+          "drug": "Teofilin",
+          "note": "Teofilin toksisitesi"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR artar"
+        },
+        {
+          "drug": "Tizanidin",
+          "note": "Kontrendike — şiddetli hipotansiyon"
+        }
+      ],
+      "antidote": "Spesifik yok. Aktif kömür, IV hidrasyon",
+      "pregnancy": "C — genelde kaçınılır",
+      "breastfeeding": "Kısa süreli uyumlu (alternatif tercih edilir)",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Süt ürünleri emilimi azaltabilir. Aşil tendiniti uyarısı verilmeli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "rocephin",
+      "tradeName": "Rocephin",
+      "otherTradeNames": [
+        "Iesef",
+        "Equiceft",
+        "Desefin",
+        "Unacefin"
+      ],
+      "activeIngredient": "Seftriakson",
+      "atc": "J01DD04",
+      "form": "Flakon (IM/IV)",
+      "strength": "250 mg, 500 mg, 1 g, 2 g",
+      "indications": [
+        "Toplum kökenli pnömoni",
+        "Menenjit",
+        "Pyelonefrit",
+        "Gonore",
+        "Cerrahi profilaksi"
+      ],
+      "contraindications": [
+        "Sefalosporin alerjisi",
+        "Şiddetli penisilin alerjisi (çapraz reaksiyon)",
+        "Yenidoğanda hiperbilirübinemi",
+        "Yenidoğanda kalsiyum içeren IV ile birlikte"
+      ],
+      "dosage": {
+        "adult": "1-2 g IV/IM günde 1 kez. Menenjit: 2 g 12 saatte bir",
+        "pediatric": "50-100 mg/kg/gün IV/IM, günde 1 kez. Menenjit: 100 mg/kg/gün (max 4 g)",
+        "renal": "GFR <10'da doz ayarı (max 2 g/gün)",
+        "hepatic": "Hem renal hem hepatik yetmezlikte max 2 g/gün"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal",
+          "Enjeksiyon yerinde ağrı",
+          "Döküntü"
+        ],
+        "serious": [
+          "Anafilaksi",
+          "Safra çamuru/taşı",
+          "Hemolitik anemi",
+          "C. difficile"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Kalsiyum içeren IV solüsyonlar",
+          "note": "Yenidoğanda kontrendike (presipitasyon)"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR artar"
+        }
+      ],
+      "antidote": "Spesifik yok. Anafilakside adrenalin",
+      "pregnancy": "B — gebelikte kullanılabilir",
+      "breastfeeding": "Düşük süt geçişi, uyumlu",
+      "storage": "Toz 25°C altında. Sulandırıldıktan sonra oda ısısında 6 saat, buzdolabında 24 saat",
+      "notes": "IM verilirken 1 g/3,5 mL lidokain ile sulandırılır (IV için lidokain KULLANILMAZ).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "klacid",
+      "tradeName": "Klacid",
+      "otherTradeNames": [
+        "Macrol",
+        "Klaromin",
+        "Megakso",
+        "Klax",
+        "Klamer"
+      ],
+      "activeIngredient": "Klaritromisin",
+      "atc": "J01FA09",
+      "form": "Film tablet / Süspansiyon / Flakon",
+      "strength": "250 mg, 500 mg tablet, 125-250 mg/5 mL süsp",
+      "indications": [
+        "Solunum yolu enfeksiyonları (atipik patojenler dahil)",
+        "H. pylori eradikasyonu",
+        "Cilt enfeksiyonları"
+      ],
+      "contraindications": [
+        "Makrolid alerjisi",
+        "QT uzaması/Torsades öyküsü",
+        "Statin (simvastatin/lovastatin) ile birlikte",
+        "Ergotamin"
+      ],
+      "dosage": {
+        "adult": "250-500 mg 12 saatte bir, 7-14 gün",
+        "pediatric": "7,5 mg/kg/doz 12 saatte bir (max 500 mg/doz)",
+        "renal": "GFR <30: doz %50 azaltılır",
+        "hepatic": "Dikkatli kullanım"
+      },
+      "sideEffects": {
+        "common": [
+          "Tat değişikliği (metalik)",
+          "Bulantı",
+          "İshal"
+        ],
+        "serious": [
+          "QT uzaması",
+          "Hepatotoksisite",
+          "Stevens-Johnson"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Simvastatin/Lovastatin",
+          "note": "Rabdomiyoliz — kontrendike"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR belirgin artar"
+        },
+        {
+          "drug": "Digoksin",
+          "note": "Digoksin düzeyi artar"
+        },
+        {
+          "drug": "Kolşisin",
+          "note": "Kolşisin toksisitesi (böbrek yetmezliğinde fatal)"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "C — alternatifler tercih edilir",
+      "breastfeeding": "Kısa süreli uyumlu",
+      "storage": "Tablet 25°C altında. Süsp sulandırılmış 14 gün oda ısısında",
+      "notes": "Güçlü CYP3A4 inhibitörü — ilaç etkileşimleri çok önemli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "beloc",
+      "tradeName": "Beloc",
+      "otherTradeNames": [
+        "Beloc Zok",
+        "Metpamid (Metoprolol — dikkat: Metpamid bazı kombinasyonlarda farklı)",
+        "Lopresor"
+      ],
+      "activeIngredient": "Metoprolol",
+      "atc": "C07AB02",
+      "form": "Tablet / Ampul",
+      "strength": "50 mg, 100 mg tablet, 5 mg/5 mL ampul",
+      "indications": [
+        "Hipertansiyon",
+        "Anjina pektoris",
+        "MI sonrası",
+        "Aritmi (SVT)",
+        "Kalp yetmezliği"
+      ],
+      "contraindications": [
+        "Bradikardi (<50/dk)",
+        "2-3. derece AV blok",
+        "Kardiyojenik şok",
+        "Dekompanse kalp yetmezliği",
+        "Astım (rölatif)"
+      ],
+      "dosage": {
+        "adult": "Oral: 25-100 mg, günde 2 kez. IV (AKS): 5 mg yavaş IV, 5 dk arayla 3 doza kadar",
+        "pediatric": "1-2 mg/kg/gün ikiye bölünmüş (off-label)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Yorgunluk",
+          "Bradikardi",
+          "Soğuk ekstremiteler",
+          "Baş dönmesi"
+        ],
+        "serious": [
+          "Akut kalp yetmezliği",
+          "Bronkospazm",
+          "AV blok",
+          "Hipoglisemiyi maskeler"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Verapamil/Diltiazem",
+          "note": "Bradikardi, AV blok — dikkat"
+        },
+        {
+          "drug": "Klonidin",
+          "note": "Kesilince rebound hipertansiyon"
+        },
+        {
+          "drug": "İnsülin",
+          "note": "Hipoglisemi belirtilerini maskeler"
+        }
+      ],
+      "antidote": "Glukagon 5-10 mg IV bolus (sonra infüzyon), atropin, IV sıvı, gerekirse pacing",
+      "pregnancy": "C",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV uygulanırken devamlı EKG ve kan basıncı monitorizasyonu.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "concor",
+      "tradeName": "Concor",
+      "otherTradeNames": [
+        "Bisocard",
+        "Bisostad",
+        "Biso"
+      ],
+      "activeIngredient": "Bisoprolol",
+      "atc": "C07AB07",
+      "form": "Film tablet",
+      "strength": "2,5 mg, 5 mg, 10 mg",
+      "indications": [
+        "Hipertansiyon",
+        "Kronik kalp yetmezliği (titre edilerek)",
+        "Stabil anjina"
+      ],
+      "contraindications": [
+        "Akut kalp yetmezliği",
+        "Kardiyojenik şok",
+        "2-3. derece AV blok",
+        "Sinüs bradikardisi",
+        "Şiddetli astım"
+      ],
+      "dosage": {
+        "adult": "HT: 5-10 mg/gün. KKY: 1,25 mg/gün başla, 2 haftada bir titre et (max 10 mg)",
+        "pediatric": "Önerilmez",
+        "renal": "GFR <20: max 10 mg/gün",
+        "hepatic": "Ciddi yetmezlikte max 10 mg/gün"
+      },
+      "sideEffects": {
+        "common": [
+          "Yorgunluk",
+          "Bradikardi",
+          "Baş dönmesi",
+          "Soğuk ekstremiteler"
+        ],
+        "serious": [
+          "Akut KKY alevlenmesi",
+          "AV blok",
+          "Bronkospazm"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Verapamil",
+          "note": "Bradikardi/asistol riski"
+        },
+        {
+          "drug": "Diğer antihipertansifler",
+          "note": "Hipotansiyon"
+        }
+      ],
+      "antidote": "Glukagon, atropin, izoprenalin",
+      "pregnancy": "C",
+      "breastfeeding": "Veri sınırlı, dikkatli kullanım",
+      "storage": "30°C altında",
+      "notes": "KKY'de yavaş titrasyon kritik — hızlı artış dekompansasyona yol açabilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "coraspin",
+      "tradeName": "Coraspin",
+      "otherTradeNames": [
+        "Asinpirine",
+        "Ecopirin"
+      ],
+      "activeIngredient": "Asetilsalisilik asit (ASA) — düşük doz",
+      "atc": "B01AC06",
+      "form": "Enterik kaplı tablet",
+      "strength": "100 mg, 300 mg",
+      "indications": [
+        "İskemik kalp hastalığı sekonder koruma",
+        "İskemik inme sekonder koruma",
+        "AKS"
+      ],
+      "contraindications": [
+        "Aktif kanama",
+        "ASA alerjisi",
+        "Hemorajik diyatez",
+        "Aktif peptik ülser"
+      ],
+      "dosage": {
+        "adult": "100 mg/gün. AKS yükleme: 300 mg çiğneyerek",
+        "pediatric": "Kawasaki dışında önerilmez",
+        "renal": "GFR <10'da kaçınılır",
+        "hepatic": "Ciddi yetmezlikte kontrendike"
+      },
+      "sideEffects": {
+        "common": [
+          "Dispepsi",
+          "Bulantı"
+        ],
+        "serious": [
+          "GİS kanama",
+          "Hemorajik inme",
+          "Anafilaksi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin/DOAC",
+          "note": "Kanama riski belirgin artar"
+        },
+        {
+          "drug": "İbuprofen",
+          "note": "Antiplatelet etkiyi azaltır"
+        }
+      ],
+      "antidote": "Spesifik yok. Trombosit transfüzyonu (acil cerrahide)",
+      "pregnancy": "Düşük doz 1-2. trimesterde uyumlu, 3. trimesterde kaçınılır",
+      "breastfeeding": "Düşük doz uyumlu",
+      "storage": "25°C altında",
+      "notes": "Enterik kaplı tablet bütün yutulur, çiğnenmez (AKS yüklemesi hariç).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "plavix",
+      "tradeName": "Plavix",
+      "otherTradeNames": [
+        "Pingel",
+        "Klopirel",
+        "Karum",
+        "Plavidol"
+      ],
+      "activeIngredient": "Klopidogrel",
+      "atc": "B01AC04",
+      "form": "Film tablet",
+      "strength": "75 mg, 300 mg",
+      "indications": [
+        "AKS (ASA ile birlikte)",
+        "Stent sonrası ikili antiplatelet",
+        "İskemik inme/PAH"
+      ],
+      "contraindications": [
+        "Aktif patolojik kanama",
+        "Klopidogrel alerjisi",
+        "Ciddi karaciğer yetmezliği"
+      ],
+      "dosage": {
+        "adult": "AKS yükleme: 300-600 mg, sonra 75 mg/gün",
+        "pediatric": "Önerilmez",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Ciddi yetmezlikte kullanılmaz"
+      },
+      "sideEffects": {
+        "common": [
+          "Kanama eğilimi",
+          "Morarma",
+          "İshal"
+        ],
+        "serious": [
+          "GİS/intrakranial kanama",
+          "TTP (nadir)",
+          "Nötropeni"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Omeprazol/Esomeprazol",
+          "note": "Klopidogrel aktivasyonunu azaltır — pantoprazol tercih"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "Kanama riski"
+        }
+      ],
+      "antidote": "Spesifik yok. Trombosit transfüzyonu",
+      "pregnancy": "B — sadece gerekirse",
+      "breastfeeding": "Veri yok, önerilmez",
+      "storage": "25°C altında",
+      "notes": "Elektif cerrahi öncesi 5-7 gün önce kesilmesi gerekir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "coumadin",
+      "tradeName": "Coumadin",
+      "otherTradeNames": [
+        "Orfarin"
+      ],
+      "activeIngredient": "Warfarin",
+      "atc": "B01AA03",
+      "form": "Tablet",
+      "strength": "1 mg, 2 mg, 2,5 mg, 5 mg, 10 mg",
+      "indications": [
+        "Atriyal fibrilasyon (inme önleme)",
+        "VTE tedavisi/profilaksisi",
+        "Mekanik kalp kapağı"
+      ],
+      "contraindications": [
+        "Aktif kanama",
+        "Gebelik (mekanik kapak hariç)",
+        "Şiddetli HT",
+        "Yakın zamanda cerrahi/serebral kanama"
+      ],
+      "dosage": {
+        "adult": "Başlangıç 5 mg/gün (yaşlıda 2,5 mg). INR'ye göre titre edilir. Hedef INR genelde 2-3 (mekanik kapak 2,5-3,5)",
+        "pediatric": "0,1-0,2 mg/kg/gün, INR'ye göre titre",
+        "renal": "Doz ayarı INR'ye göre",
+        "hepatic": "Yetmezlikte doz azaltılır, INR sık kontrol"
+      },
+      "sideEffects": {
+        "common": [
+          "Morarma",
+          "Burun kanaması",
+          "Diş eti kanaması"
+        ],
+        "serious": [
+          "Major kanama (intrakranial, GİS)",
+          "Warfarin nekrozu (ilk günlerde, protein C eksikliği)",
+          "Mor ayak parmağı sendromu"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Amiodaron",
+          "note": "INR belirgin artar — doz %30-50 azalt"
+        },
+        {
+          "drug": "Antibiyotikler (TMP-SMX, makrolid, metronidazol)",
+          "note": "INR artar"
+        },
+        {
+          "drug": "NSAİİ/Aspirin",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "K vitamini açısından zengin gıdalar",
+          "note": "INR azaltır"
+        },
+        {
+          "drug": "Rifampisin",
+          "note": "INR belirgin azalır"
+        }
+      ],
+      "antidote": "K vitamini (Konakion) — yavaş IV veya oral. Acil tersine çevirme: 4-faktör PCC (Octaplex/Prothromplex) ± TDP",
+      "pregnancy": "X (1-2. trimester) — embryopati. Mekanik kapakta uzman kararı.",
+      "breastfeeding": "Anne sütüne geçmez, uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Doz tableti her gün AYNI saatte alınır. INR takibi şart. Kanama belirtisi: ani şiddetli baş ağrısı, gaitada kan, hematüri.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "clexane",
+      "tradeName": "Clexane",
+      "otherTradeNames": [
+        "Enox",
+        "Diltev",
+        "Heparesh"
+      ],
+      "activeIngredient": "Enoksaparin sodyum",
+      "atc": "B01AB05",
+      "form": "Kullanıma hazır enjektör (SC)",
+      "strength": "20 mg, 40 mg, 60 mg, 80 mg, 100 mg",
+      "indications": [
+        "VTE profilaksisi (cerrahi/medikal)",
+        "DVT/PE tedavisi",
+        "AKS"
+      ],
+      "contraindications": [
+        "Aktif major kanama",
+        "Heparin'e bağlı trombositopeni (HIT) öyküsü",
+        "Akut bakteriyel endokardit",
+        "Ciddi trombositopeni"
+      ],
+      "dosage": {
+        "adult": "Profilaksi: 40 mg SC günde 1 kez. Tedavi: 1 mg/kg SC 12 saatte bir veya 1,5 mg/kg günde 1 kez. AKS: 1 mg/kg 12 saatte bir + ASA",
+        "pediatric": "Tedavi: 1 mg/kg/doz SC 12 saatte bir (anti-Xa takibi)",
+        "renal": "GFR <30: tedavi dozu 1 mg/kg/gün'e azaltılır",
+        "hepatic": "Doz ayarı gerekmez (anti-Xa takibi düşünülmeli)"
+      },
+      "sideEffects": {
+        "common": [
+          "Enjeksiyon yerinde ekimoz/ağrı",
+          "Hafif trombositopeni"
+        ],
+        "serious": [
+          "Major kanama",
+          "HIT",
+          "Spinal/epidural hematom (spinal anestezi ile)",
+          "Osteoporoz (uzun süreli)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Antiplatelet/Antikoagülan",
+          "note": "Kanama riski"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "Kanama riski"
+        }
+      ],
+      "antidote": "Protamin sulfat (kısmen etkili) — 1 mg protamin, son 8 saatte verilen her 1 mg enoksaparini nötralize eder",
+      "pregnancy": "B — gebelikte tercih edilen antikoagülan",
+      "breastfeeding": "Uyumlu (oral biyoyararlanım yok)",
+      "storage": "25°C altında, dondurulmaz",
+      "notes": "Karın yan duvarına SC, deri kıvrımı tutularak. Enjeksiyon yerinde havayı boşaltma — bu kabarcık emilim için bırakılır.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "lasix",
+      "tradeName": "Lasix",
+      "otherTradeNames": [
+        "Furomid",
+        "Desal"
+      ],
+      "activeIngredient": "Furosemid",
+      "atc": "C03CA01",
+      "form": "Tablet / Ampul",
+      "strength": "40 mg tablet, 20 mg/2 mL ampul",
+      "indications": [
+        "Akut akciğer ödemi",
+        "Kalp/karaciğer/böbrek kaynaklı ödem",
+        "Hipertansiyon",
+        "Hiperkalsemi"
+      ],
+      "contraindications": [
+        "Anüri",
+        "Hipovolemi/dehidratasyon",
+        "Sülfonamid alerjisi (çapraz)",
+        "Hepatik koma"
+      ],
+      "dosage": {
+        "adult": "Oral: 20-80 mg/gün. IV: 20-40 mg yavaş bolus, gerekirse 2 katına çıkarılır. İnfüzyon: 0,1 mg/kg/saat",
+        "pediatric": "1-2 mg/kg/doz IV/oral, gerekirse tekrar",
+        "renal": "Yüksek dozlar gerekebilir",
+        "hepatic": "Düşük doz başla, dikkatli"
+      },
+      "sideEffects": {
+        "common": [
+          "Sık idrara çıkma",
+          "Susuzluk",
+          "Baş dönmesi",
+          "Kas krampları"
+        ],
+        "serious": [
+          "Dehidratasyon",
+          "Hipokalemi",
+          "Hiponatremi",
+          "Ototoksisite (yüksek doz IV)",
+          "Akut böbrek hasarı"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Digoksin",
+          "note": "Hipokalemi → digoksin toksisitesi"
+        },
+        {
+          "drug": "Aminoglikozid",
+          "note": "Ototoksisite artar"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Lityum düzeyi artar"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "Diüretik etkiyi azaltır"
+        }
+      ],
+      "antidote": "IV sıvı, elektrolit replasmanı (K, Mg)",
+      "pregnancy": "C — sadece gerekirse",
+      "breastfeeding": "Süt üretimini azaltabilir",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV bolus en az 1-2 dakikada verilir (ototoksisiteyi azaltmak için). K monitorize edilmeli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "norvasc",
+      "tradeName": "Norvasc",
+      "otherTradeNames": [
+        "Amlodis",
+        "Vasonorm",
+        "Monodipin",
+        "Norvadin"
+      ],
+      "activeIngredient": "Amlodipin",
+      "atc": "C08CA01",
+      "form": "Tablet",
+      "strength": "5 mg, 10 mg",
+      "indications": [
+        "Hipertansiyon",
+        "Kronik stabil anjina",
+        "Vazospastik anjina"
+      ],
+      "contraindications": [
+        "Şiddetli hipotansiyon",
+        "Şok",
+        "Aort stenozu (ileri)",
+        "Amlodipin alerjisi"
+      ],
+      "dosage": {
+        "adult": "5-10 mg/gün, tek doz",
+        "pediatric": "6-17 yaş: 2,5-5 mg/gün",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Düşük doz başla (2,5 mg)"
+      },
+      "sideEffects": {
+        "common": [
+          "Pretibial ödem",
+          "Baş ağrısı",
+          "Yüzde flushing",
+          "Çarpıntı"
+        ],
+        "serious": [
+          "Refleks taşikardi",
+          "Şiddetli hipotansiyon",
+          "Anjina alevlenmesi (nadir)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Simvastatin",
+          "note": "Simvastatin max 20 mg/gün"
+        },
+        {
+          "drug": "CYP3A4 inhibitörleri (klaritromisin)",
+          "note": "Amlodipin düzeyi artar"
+        }
+      ],
+      "antidote": "Kalsiyum glukonat IV, IV sıvı, vazopressör, yüksek doz insülin-glukoz infüzyonu",
+      "pregnancy": "C",
+      "breastfeeding": "Anne sütüne geçer, dikkat",
+      "storage": "25°C altında",
+      "notes": "Yarılanma ömrü uzun (35-50 saat) — etkisi yavaş başlar, kesilince yavaş kaybolur.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "coversyl",
+      "tradeName": "Coversyl",
+      "otherTradeNames": [
+        "Preterax",
+        "Coverex"
+      ],
+      "activeIngredient": "Perindopril",
+      "atc": "C09AA04",
+      "form": "Tablet",
+      "strength": "2,5 mg, 5 mg, 10 mg",
+      "indications": [
+        "Hipertansiyon",
+        "Kalp yetmezliği",
+        "Stabil koroner arter hastalığı"
+      ],
+      "contraindications": [
+        "ACE inhibitör alerjisi/anjiyoödem öyküsü",
+        "Gebelik",
+        "Bilateral renal arter stenozu",
+        "Aliskiren ile (diyabetiklerde)"
+      ],
+      "dosage": {
+        "adult": "5 mg/gün başla, gerekirse 10 mg'a artır",
+        "pediatric": "Önerilmez",
+        "renal": "GFR 30-60: 2,5 mg/gün. GFR <30: 2,5 mg gün aşırı",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Kuru öksürük",
+          "Baş dönmesi",
+          "Hiperkalemi",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Anjiyoödem (acil!)",
+          "Akut böbrek hasarı",
+          "Şiddetli hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Potasyum tutucu diüretik/K desteği",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "AKI riski, antihipertansif etkiyi azaltır"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Lityum toksisitesi"
+        }
+      ],
+      "antidote": "Anjiyoödem: adrenalin (özellikle larengeal), kortikosteroid, antihistaminik. C1-esteraz inhibitörü düşünülebilir.",
+      "pregnancy": "D — kontrendike",
+      "breastfeeding": "Yenidoğanda önerilmez",
+      "storage": "25°C altında",
+      "notes": "İlk doz hipotansiyonu için dikkat (özellikle volüm açığı varsa).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "aldactone",
+      "tradeName": "Aldactone",
+      "otherTradeNames": [
+        "Aldatum"
+      ],
+      "activeIngredient": "Spironolakton",
+      "atc": "C03DA01",
+      "form": "Tablet",
+      "strength": "25 mg, 100 mg",
+      "indications": [
+        "Kalp yetmezliği (NYHA III-IV)",
+        "Primer hiperaldosteronizm",
+        "Asit (siroz)",
+        "Dirençli HT"
+      ],
+      "contraindications": [
+        "Hiperkalemi (K >5,5)",
+        "Anüri",
+        "Akut böbrek yetmezliği",
+        "Addison hastalığı"
+      ],
+      "dosage": {
+        "adult": "KKY: 25-50 mg/gün. Asit: 100-400 mg/gün",
+        "pediatric": "1-3 mg/kg/gün",
+        "renal": "GFR <30'da kontrendike",
+        "hepatic": "Asitte tercih edilir"
+      },
+      "sideEffects": {
+        "common": [
+          "Hiperkalemi",
+          "Jinekomasti (erkek)",
+          "Menstrüel düzensizlik",
+          "Mide rahatsızlığı"
+        ],
+        "serious": [
+          "Şiddetli hiperkalemi (aritmi)",
+          "Akut böbrek hasarı"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "ACE inhibitör/ARB",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "K desteği",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "Hiperkalemi, AKI"
+        }
+      ],
+      "antidote": "Hiperkalemi tedavisi: kalsiyum glukonat, insülin-glukoz, salbutamol, potasyum bağlayıcı reçineler",
+      "pregnancy": "C — sadece gerekirse",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında",
+      "notes": "Başlangıçta ve dozu artırırken 1 hafta sonra K ve kreatinin kontrolü.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "glucophage",
+      "tradeName": "Glucophage",
+      "otherTradeNames": [
+        "Glifor",
+        "Diaformin",
+        "Matofin",
+        "Diabesin",
+        "Glucient"
+      ],
+      "activeIngredient": "Metformin",
+      "atc": "A10BA02",
+      "form": "Film tablet (IR/XR)",
+      "strength": "500 mg, 850 mg, 1000 mg",
+      "indications": [
+        "Tip 2 diyabet (birinci basamak)",
+        "Prediyabet (seçilmiş hastalar)",
+        "PCOS"
+      ],
+      "contraindications": [
+        "GFR <30",
+        "Akut/kronik metabolik asidoz",
+        "Akut kalp/solunum yetmezliği",
+        "Sepsis",
+        "Şok",
+        "IV kontrastlı tetkik öncesi (geçici durdurma)"
+      ],
+      "dosage": {
+        "adult": "500 mg 1-2x/gün başla, haftalık titre. Max 2000-3000 mg/gün (bölünmüş veya XR)",
+        "pediatric": "10 yaş üzeri: 500 mg/gün başla, max 2000 mg/gün",
+        "renal": "GFR 30-45: max 1000 mg/gün, dikkatli. GFR <30: kontrendike",
+        "hepatic": "Aktif karaciğer hastalığında kaçınılır"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal",
+          "Bulantı",
+          "Karın krampları",
+          "Metalik tat"
+        ],
+        "serious": [
+          "Laktik asidoz (nadir ama fatal)",
+          "B12 eksikliği (uzun süreli kullanım)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "İyotlu kontrast",
+          "note": "AKI/laktik asidoz — 48 saat öncesi durdurulur"
+        },
+        {
+          "drug": "Alkol",
+          "note": "Laktik asidoz riski"
+        },
+        {
+          "drug": "Simetidin",
+          "note": "Metformin düzeyi artar"
+        }
+      ],
+      "antidote": "Spesifik yok. Laktik asidozda hemodiyaliz",
+      "pregnancy": "B — gebelikte kullanılabilir (gestasyonel DM)",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında",
+      "notes": "Yemekle alınır (GİS yan etkilerini azaltır). Tek başına hipoglisemi yapmaz.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "lantus",
+      "tradeName": "Lantus",
+      "otherTradeNames": [
+        "Toujeo (insulin glarjin U-300)",
+        "Abasaglar (biosimilar)"
+      ],
+      "activeIngredient": "İnsülin glarjin",
+      "atc": "A10AE04",
+      "form": "Kullanıma hazır kalem (SoloStar) / Flakon",
+      "strength": "100 IU/mL",
+      "indications": [
+        "Tip 1 DM",
+        "Tip 2 DM bazal insülin ihtiyacı"
+      ],
+      "contraindications": [
+        "Hipoglisemi anında",
+        "İnsülin alerjisi"
+      ],
+      "dosage": {
+        "adult": "Başlangıç: 0,2 IU/kg/gün veya 10 IU SC günde 1 kez (aynı saatte). Glisemiye göre titre",
+        "pediatric": "Bireyselleştirilir (genelde 0,5-1 IU/kg/gün toplam)",
+        "renal": "Doz azaltılması gerekebilir",
+        "hepatic": "Doz azaltılması gerekebilir"
+      },
+      "sideEffects": {
+        "common": [
+          "Hipoglisemi",
+          "Enjeksiyon yerinde reaksiyon",
+          "Lipodistrofi"
+        ],
+        "serious": [
+          "Şiddetli hipoglisemi (koma)",
+          "Hipokalemi",
+          "Alerjik reaksiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Beta blokerler",
+          "note": "Hipoglisemi belirtilerini maskeler"
+        },
+        {
+          "drug": "Kortikosteroidler",
+          "note": "İnsülin ihtiyacı artar"
+        },
+        {
+          "drug": "Alkol",
+          "note": "Hipoglisemi riski"
+        }
+      ],
+      "antidote": "Hipoglisemi: oral karbonhidrat (bilinç açıksa), glukagon 1 mg IM/SC, %20-30 dekstroz IV",
+      "pregnancy": "B — gebelikte tercih edilen bazal insülin",
+      "breastfeeding": "Uyumlu (anne sütüne geçmez)",
+      "storage": "Açılmamış: buzdolabı 2-8°C. Açılmış kalem: 25°C altında 28 gün",
+      "notes": "Bulanık değil, berrak çözelti — bulanıksa KULLANILMAZ. Başka insülinle karıştırılmaz.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "novorapid",
+      "tradeName": "NovoRapid",
+      "otherTradeNames": [
+        "Fiasp (hızlı etkili insulin aspart)"
+      ],
+      "activeIngredient": "İnsülin aspart",
+      "atc": "A10AB05",
+      "form": "Kullanıma hazır kalem (FlexPen) / Flakon",
+      "strength": "100 IU/mL",
+      "indications": [
+        "Tip 1/2 DM postprandiyal kontrol",
+        "İnsülin pompası",
+        "DKA tedavisi (IV)"
+      ],
+      "contraindications": [
+        "Hipoglisemi anında",
+        "Aşırı duyarlılık"
+      ],
+      "dosage": {
+        "adult": "Yemekten 0-15 dk önce SC. Doz karbonhidrat sayımı/glisemiye göre. DKA: 0,1 IU/kg/saat IV infüzyon",
+        "pediatric": "Aynı prensip, bireyselleştirilir",
+        "renal": "Doz azaltılması gerekebilir",
+        "hepatic": "Doz azaltılması gerekebilir"
+      },
+      "sideEffects": {
+        "common": [
+          "Hipoglisemi",
+          "Enjeksiyon yerinde reaksiyon"
+        ],
+        "serious": [
+          "Şiddetli hipoglisemi",
+          "Hipokalemi (özellikle IV)",
+          "Alerjik reaksiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Beta blokerler",
+          "note": "Hipoglisemi belirtilerini maskeler"
+        },
+        {
+          "drug": "Kortikosteroidler",
+          "note": "İnsülin direnci artar"
+        }
+      ],
+      "antidote": "Oral glukoz, glukagon, IV dekstroz",
+      "pregnancy": "B",
+      "breastfeeding": "Uyumlu",
+      "storage": "Açılmamış: 2-8°C. Kullanımdaki kalem: 25°C altında 28 gün, dondurulmaz",
+      "notes": "Berrak çözelti. DKA'da IV verilmesi en sık endikasyonlardan biri.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "pantpas",
+      "tradeName": "Pantpas",
+      "otherTradeNames": [
+        "Pantotim",
+        "Pulcet",
+        "Panto",
+        "Pandev"
+      ],
+      "activeIngredient": "Pantoprazol",
+      "atc": "A02BC02",
+      "form": "Enterik tablet / Flakon",
+      "strength": "20 mg, 40 mg tablet, 40 mg flakon",
+      "indications": [
+        "Peptik ülser",
+        "GÖRH",
+        "Üst GİS kanama (IV)",
+        "Stres ülser profilaksisi",
+        "Zollinger-Ellison"
+      ],
+      "contraindications": [
+        "PPI alerjisi"
+      ],
+      "dosage": {
+        "adult": "Oral: 40 mg/gün, 4-8 hafta. IV: 40 mg/gün. ÜGİS kanama: 80 mg IV bolus + 8 mg/saat infüzyon 72 saat",
+        "pediatric": "≥5 yaş: 20-40 mg/gün",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Max 40 mg/gün"
+      },
+      "sideEffects": {
+        "common": [
+          "Baş ağrısı",
+          "İshal/kabızlık",
+          "Bulantı"
+        ],
+        "serious": [
+          "C. difficile koliti",
+          "Hipomagnezemi",
+          "Osteoporoz/kırık (uzun süre)",
+          "İnterstisyel nefrit",
+          "B12 eksikliği"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Klopidogrel",
+          "note": "Pantoprazol etkilemez — omeprazol/esomeprazol yerine tercih edilir"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "MTX düzeyi artar"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında. IV sulandırıldıktan sonra kısa sürede kullanılmalı",
+      "notes": "Aç karna (yemekten 30-60 dk önce) alınır. Tablet bütün yutulur, çiğnenmez.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "nexium",
+      "tradeName": "Nexium",
+      "otherTradeNames": [
+        "Esomax",
+        "Esonix",
+        "Esopra"
+      ],
+      "activeIngredient": "Esomeprazol",
+      "atc": "A02BC05",
+      "form": "Enterik kapsül / Flakon",
+      "strength": "20 mg, 40 mg",
+      "indications": [
+        "GÖRH",
+        "Peptik ülser",
+        "H. pylori eradikasyonu (kombine)",
+        "NSAİİ ülser profilaksisi"
+      ],
+      "contraindications": [
+        "PPI alerjisi",
+        "Nelfinavir ile birlikte"
+      ],
+      "dosage": {
+        "adult": "20-40 mg/gün. H. pylori: 20 mg 2x/gün (antibiyotiklerle 14 gün)",
+        "pediatric": "≥1 yaş: 10-20 mg/gün",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Max 20 mg/gün"
+      },
+      "sideEffects": {
+        "common": [
+          "Baş ağrısı",
+          "İshal",
+          "Bulantı"
+        ],
+        "serious": [
+          "C. difficile",
+          "Hipomagnezemi",
+          "Osteoporoz",
+          "İnterstisyel nefrit"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Klopidogrel",
+          "note": "Aktivasyonu azaltır — pantoprazol tercih"
+        },
+        {
+          "drug": "Diazepam",
+          "note": "Diazepam düzeyi artar"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "MTX toksisitesi"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında",
+      "notes": "Yemekten 1 saat önce alınır. Kapsül bütün yutulur (çiğnenmez).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "buscopan",
+      "tradeName": "Buscopan",
+      "otherTradeNames": [
+        "Spasmex",
+        "Molit"
+      ],
+      "activeIngredient": "Hyoscine N-butil bromid",
+      "atc": "A03BB01",
+      "form": "Tablet / Ampul",
+      "strength": "10 mg tablet, 20 mg/1 mL ampul",
+      "indications": [
+        "Spazmodik karın ağrısı",
+        "Renal/biliyer kolik",
+        "Dismenore"
+      ],
+      "contraindications": [
+        "Dar açılı glokom",
+        "Miyastenia gravis",
+        "Mekanik İYE/üretral obstrüksiyon",
+        "Megakolon"
+      ],
+      "dosage": {
+        "adult": "Oral: 10-20 mg 4x/gün. IM/IV: 20 mg, gerekirse 30 dk sonra tekrar (max 100 mg/gün)",
+        "pediatric": "6-12 yaş: 10 mg 3x/gün",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Ağız kuruluğu",
+          "Görme bulanıklığı",
+          "Taşikardi",
+          "Konstipasyon",
+          "İdrar retansiyonu"
+        ],
+        "serious": [
+          "Akut glokom atağı",
+          "Anafilaksi (IV)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Diğer antikolinerjikler",
+          "note": "Etki katlanır"
+        },
+        {
+          "drug": "TCA/H1 antihistaminik",
+          "note": "Antikolinerjik etki"
+        }
+      ],
+      "antidote": "Fizostigmin (santral antikolinerjik sendromda) — dikkatli kullanım",
+      "pregnancy": "B — gerekirse",
+      "breastfeeding": "Veri sınırlı",
+      "storage": "25°C altında",
+      "notes": "IV verilirken hızlı taşikardi olabilir, monitörize edilmeli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "primperan",
+      "tradeName": "Primperan",
+      "otherTradeNames": [
+        "Metpamid",
+        "Metpamide"
+      ],
+      "activeIngredient": "Metoklopramid",
+      "atc": "A03FA01",
+      "form": "Tablet / Şurup / Ampul",
+      "strength": "10 mg tablet, 5 mg/5 mL şurup, 10 mg/2 mL ampul",
+      "indications": [
+        "Bulantı/kusma (gastroparezi, postoperatif, kemoterapi)",
+        "GÖRH (kısa süreli)"
+      ],
+      "contraindications": [
+        "GİS kanama/perforasyon/obstrüksiyon",
+        "Feokromositoma",
+        "Parkinson hastalığı",
+        "Tardif diskinezi öyküsü",
+        "Epilepsi"
+      ],
+      "dosage": {
+        "adult": "10 mg, 8 saatte bir oral/IV/IM. Max 30 mg/gün, max 5 gün",
+        "pediatric": "1-18 yaş: 0,1-0,15 mg/kg/doz (max 10 mg), 8 saatte bir, max 5 gün",
+        "renal": "GFR <40: doz %50 azaltılır",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Yorgunluk",
+          "Sedasyon",
+          "İshal",
+          "Halsizlik"
+        ],
+        "serious": [
+          "Ekstrapiramidal reaksiyon (özellikle genç/yaşlı)",
+          "Tardif diskinezi",
+          "Nöroleptik malign sendrom",
+          "QT uzaması"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Antipsikotikler",
+          "note": "Ekstrapiramidal reaksiyon riski"
+        },
+        {
+          "drug": "Dopamin agonistleri (levodopa)",
+          "note": "Karşılıklı antagonizm"
+        }
+      ],
+      "antidote": "Ekstrapiramidal reaksiyon: Biperiden (Akineton) 2,5-5 mg IV/IM",
+      "pregnancy": "B",
+      "breastfeeding": "Az süte geçer, kısa süre uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV yavaş (3 dakikada) verilir — hızlı bolus ajitasyon/anksiyete yapar. Max 5 gün kullanım önerisi (EMA).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "zofran",
+      "tradeName": "Zofran",
+      "otherTradeNames": [
+        "Onsetron",
+        "Setronon",
+        "Onkoset"
+      ],
+      "activeIngredient": "Ondansetron",
+      "atc": "A04AA01",
+      "form": "Tablet / Şurup / Ampul",
+      "strength": "4 mg, 8 mg tablet, 4 mg/2 mL ampul",
+      "indications": [
+        "Kemoterapi/radyoterapiye bağlı bulantı-kusma",
+        "Postoperatif bulantı-kusma"
+      ],
+      "contraindications": [
+        "Apomorfin ile birlikte (kontrendike)",
+        "Doğuştan uzun QT",
+        "Ondansetron alerjisi"
+      ],
+      "dosage": {
+        "adult": "4-8 mg PO/IV, 8 saatte bir. Postop: 4 mg IV indüksiyonda",
+        "pediatric": "0,1-0,15 mg/kg/doz IV (max 8 mg), 8 saatte bir",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Max 8 mg/gün"
+      },
+      "sideEffects": {
+        "common": [
+          "Baş ağrısı",
+          "Kabızlık",
+          "Halsizlik"
+        ],
+        "serious": [
+          "QT uzaması/Torsades",
+          "Serotonin sendromu (SSRI ile)",
+          "Anafilaksi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Apomorfin",
+          "note": "Kontrendike — şiddetli hipotansiyon"
+        },
+        {
+          "drug": "SSRI/SNRI",
+          "note": "Serotonin sendromu"
+        },
+        {
+          "drug": "QT uzatanlar",
+          "note": "Aritmi riski"
+        }
+      ],
+      "antidote": "Spesifik yok. QT uzamasında Mg sülfat IV",
+      "pregnancy": "B — 1. trimesterde dikkat (yarık damak tartışmalı)",
+      "breastfeeding": "Veri sınırlı, kısa süreli uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV en az 30 saniyede verilir. Tek doz öncesi EKG düşünülmeli (uzun QT riski).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "dormicum",
+      "tradeName": "Dormicum",
+      "otherTradeNames": [
+        "Demizolam"
+      ],
+      "activeIngredient": "Midazolam",
+      "atc": "N05CD08",
+      "form": "Tablet / Ampul",
+      "strength": "15 mg tablet, 5 mg/5 mL, 15 mg/3 mL ampul",
+      "indications": [
+        "Prosedürel sedasyon",
+        "Anestezi indüksiyonu/idamesi",
+        "Status epileptikus",
+        "YBÜ sedasyon"
+      ],
+      "contraindications": [
+        "Miyastenia gravis",
+        "Şiddetli solunum yetmezliği",
+        "Uyku apnesi sendromu (rölatif)",
+        "Akut dar açılı glokom"
+      ],
+      "dosage": {
+        "adult": "Sedasyon IV: 0,5-2 mg yavaş bolus, etkiye göre titre. İndüksiyon: 0,1-0,3 mg/kg IV. Status: 0,1-0,2 mg/kg IV/IM",
+        "pediatric": "Sedasyon: 0,05-0,1 mg/kg IV. Status: 0,15-0,2 mg/kg IV/IM/bukkal",
+        "renal": "Yetmezlikte birikme, doz azaltılır",
+        "hepatic": "Doz azaltılır, etki uzar"
+      },
+      "sideEffects": {
+        "common": [
+          "Sedasyon",
+          "Amnezi",
+          "Baş dönmesi",
+          "Hipotansiyon"
+        ],
+        "serious": [
+          "Solunum depresyonu",
+          "Apne",
+          "Paradoksal ajitasyon (özellikle çocuk/yaşlı)",
+          "Hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Opioidler",
+          "note": "Solunum depresyonu — sinerjik"
+        },
+        {
+          "drug": "CYP3A4 inhibitörleri (klaritromisin, ketokonazol)",
+          "note": "Midazolam düzeyi artar"
+        }
+      ],
+      "antidote": "Flumazenil (Anexate) 0,2 mg IV, gerekirse 0,1 mg dakikada tekrar (max 1 mg). Dikkat: nöbet eşiğini düşürür, BDZ bağımlılarında çekilme.",
+      "pregnancy": "D — gebelikte sadece zorunlu hallerde",
+      "breastfeeding": "Tek doz sonrası 4 saat ara",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Solunum/EKG/SpO2 monitorizasyonu şart. Reanimasyon malzemesi hazır olmalı.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "diazem",
+      "tradeName": "Diazem",
+      "otherTradeNames": [
+        "Nervium",
+        "Diapam"
+      ],
+      "activeIngredient": "Diazepam",
+      "atc": "N05BA01",
+      "form": "Tablet / Ampul / Rektal tüp",
+      "strength": "2 mg, 5 mg, 10 mg tablet, 10 mg/2 mL ampul, 5-10 mg rektal",
+      "indications": [
+        "Anksiyete",
+        "Status epileptikus/akut nöbet",
+        "Alkol çekilme sendromu",
+        "Kas spazmı",
+        "Preanestezi"
+      ],
+      "contraindications": [
+        "Miyastenia gravis",
+        "Şiddetli solunum yetmezliği",
+        "Uyku apnesi",
+        "Akut dar açılı glokom",
+        "Şiddetli karaciğer yetmezliği"
+      ],
+      "dosage": {
+        "adult": "Anksiyete oral: 2-10 mg 2-4x/gün. Status: 5-10 mg IV yavaş (max 20 mg)",
+        "pediatric": "Nöbet IV: 0,15-0,2 mg/kg (max 10 mg). Rektal: 0,5 mg/kg (max 20 mg)",
+        "renal": "Doz azaltılır",
+        "hepatic": "Doz belirgin azaltılır, etki uzar"
+      },
+      "sideEffects": {
+        "common": [
+          "Sedasyon",
+          "Halsizlik",
+          "Ataksi",
+          "Konfüzyon (yaşlı)"
+        ],
+        "serious": [
+          "Solunum depresyonu",
+          "Bağımlılık",
+          "Çekilme nöbeti"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Opioid/alkol/sedatif",
+          "note": "Solunum depresyonu"
+        },
+        {
+          "drug": "CYP3A4 inhibitörleri",
+          "note": "Düzey artar"
+        }
+      ],
+      "antidote": "Flumazenil 0,2 mg IV (yukarıdaki uyarılar)",
+      "pregnancy": "D — özellikle 1. trimester (yarık damak şüphesi)",
+      "breastfeeding": "Uzun süreli kullanım önerilmez",
+      "storage": "25°C altında, ışıktan korunur. Ampul: yumuşak plastik tüpe yapışır — cam enjektör tercih edilir",
+      "notes": "IV en az 2 dakikada (max 5 mg/dk) verilir. Ampuldeki çözücü propilen glikoldür, IM yapılırken yanma yapabilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "akineton",
+      "tradeName": "Akineton",
+      "otherTradeNames": [],
+      "activeIngredient": "Biperiden",
+      "atc": "N04AA02",
+      "form": "Tablet / Ampul",
+      "strength": "2 mg tablet, 5 mg/1 mL ampul",
+      "indications": [
+        "İlaca bağlı ekstrapiramidal reaksiyon (akut distoni)",
+        "Parkinson hastalığı (yardımcı)"
+      ],
+      "contraindications": [
+        "Dar açılı glokom",
+        "Mekanik İYE obstrüksiyon",
+        "Megakolon",
+        "Miyastenia gravis"
+      ],
+      "dosage": {
+        "adult": "Akut distoni: 2,5-5 mg IV/IM, gerekirse 30 dk sonra tekrar (max 20 mg/gün). Oral: 1-2 mg 2-4x/gün",
+        "pediatric": "0,04 mg/kg/doz IV/IM",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Dikkatli kullanım"
+      },
+      "sideEffects": {
+        "common": [
+          "Ağız kuruluğu",
+          "Görme bulanıklığı",
+          "Konstipasyon",
+          "İdrar retansiyonu"
+        ],
+        "serious": [
+          "Konfüzyon (özellikle yaşlı)",
+          "Halüsinasyon",
+          "Akut glokom"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Diğer antikolinerjikler",
+          "note": "Etki katlanır"
+        },
+        {
+          "drug": "Metoklopramid",
+          "note": "Metoklopramidin antidotudur"
+        }
+      ],
+      "antidote": "Fizostigmin (toksik dozda santral antikolinerjik sendromda)",
+      "pregnancy": "C — sadece gerekirse",
+      "breastfeeding": "Süt üretimini azaltabilir",
+      "storage": "25°C altında",
+      "notes": "Acil servisteki en yaygın endikasyon: metoklopramid/antipsikotik kaynaklı akut distoni (göz, boyun, dil).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "ventolin",
+      "tradeName": "Ventolin",
+      "otherTradeNames": [
+        "Asthavent",
+        "Salbutol",
+        "Salbulin"
+      ],
+      "activeIngredient": "Salbutamol (albuterol)",
+      "atc": "R03AC02",
+      "form": "İnhaler (MDI) / Nebül / Tablet / Ampul",
+      "strength": "100 mcg/püskürtme, 2,5-5 mg nebül, 2-4 mg tablet",
+      "indications": [
+        "Astım (akut atak/idame)",
+        "KOAH alevlenmesi",
+        "Egzersize bağlı bronkospazm",
+        "Hiperkalemi (yardımcı)"
+      ],
+      "contraindications": [
+        "Salbutamol alerjisi"
+      ],
+      "dosage": {
+        "adult": "MDI: 2 püskürtme 4-6 saatte bir. Akut atak: 4-8 püskürtme spacer ile 20 dk arayla. Nebül: 2,5-5 mg",
+        "pediatric": "MDI: 2-4 püskürtme spacer ile. Nebül: 0,15 mg/kg (min 2,5 mg)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Tremor",
+          "Çarpıntı",
+          "Baş ağrısı",
+          "Sinirlilik"
+        ],
+        "serious": [
+          "Şiddetli taşikardi/aritmi",
+          "Hipokalemi",
+          "Paradoksal bronkospazm",
+          "Laktik asidoz (yüksek doz)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Beta blokerler",
+          "note": "Etki antagonize olur, bronkospazm"
+        },
+        {
+          "drug": "Diüretik",
+          "note": "Hipokalemi şiddetlenir"
+        }
+      ],
+      "antidote": "Spesifik yok. Şiddetli aritmide kardiyoselektif beta bloker (dikkatli)",
+      "pregnancy": "C — astımda kullanılır (hipoksi daha tehlikeli)",
+      "breastfeeding": "Uyumlu",
+      "storage": "MDI: 25°C altında, delinmemeli, ısıdan korunur. Nebül: 25°C altında",
+      "notes": "Spacer ile MDI etkinliği nebülize ile eşittir (akut atakta). Hiperkalemide adjuvan tedavidir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "pulmicort",
+      "tradeName": "Pulmicort",
+      "otherTradeNames": [
+        "Inflammide",
+        "Budenofalk (farklı endikasyon)"
+      ],
+      "activeIngredient": "Budesonid",
+      "atc": "R03BA02",
+      "form": "İnhaler / Nebül",
+      "strength": "0,25-0,5 mg/2 mL nebül, 100-200 mcg/püskürtme",
+      "indications": [
+        "Astım idamesi",
+        "KOAH idame (seçilmiş)",
+        "Krup (akut larengotrakeit)"
+      ],
+      "contraindications": [
+        "Budesonid alerjisi",
+        "Aktif solunum yolu enfeksiyonu (rölatif)"
+      ],
+      "dosage": {
+        "adult": "İnhaler: 200-800 mcg/gün bölünmüş. Nebül: 1-2 mg 2x/gün",
+        "pediatric": "Astım: 0,25-0,5 mg nebül 2x/gün. Krup: 2 mg nebül tek doz",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Dikkatli kullanım"
+      },
+      "sideEffects": {
+        "common": [
+          "Oral kandida",
+          "Ses kısıklığı",
+          "Boğaz tahrişi"
+        ],
+        "serious": [
+          "Adrenal supresyon (yüksek doz)",
+          "Büyüme geriliği (çocuk, uzun süreli)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "CYP3A4 inhibitörleri (ketokonazol, ritonavir)",
+          "note": "Sistemik etki artar"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B — astımda tercih edilen ICS",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında. Nebül flakon açıldıktan sonra 12 saat içinde kullanılır",
+      "notes": "Kullanım sonrası ağız çalkalanır (oral kandida önleme). Akut atakta etkili değildir, idame içindir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "atrovent",
+      "tradeName": "Atrovent",
+      "otherTradeNames": [
+        "Ipravent"
+      ],
+      "activeIngredient": "İpratropium bromid",
+      "atc": "R03BB01",
+      "form": "İnhaler / Nebül",
+      "strength": "20 mcg/püskürtme, 250-500 mcg/2 mL nebül",
+      "indications": [
+        "KOAH alevlenmesi/idamesi",
+        "Akut astım atağı (salbutamol ile kombine)"
+      ],
+      "contraindications": [
+        "Atropin/türevleri alerjisi",
+        "Dar açılı glokom (göze sprey kaçışına dikkat)"
+      ],
+      "dosage": {
+        "adult": "Nebül: 500 mcg 4-6 saatte bir. MDI: 2 püskürtme 4-6 saatte bir",
+        "pediatric": "Nebül: 250 mcg 6-8 saatte bir (akut atakta 20 dk arayla 3 doz)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Ağız kuruluğu",
+          "Baş ağrısı",
+          "Öksürük"
+        ],
+        "serious": [
+          "Paradoksal bronkospazm",
+          "Akut glokom (göze kaçarsa)",
+          "İdrar retansiyonu (prostat hipertrofisinde)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Diğer antikolinerjikler",
+          "note": "Etki katlanır"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "Nebülizatörle uygulanırken yüz maskesinde göze kaçışı önlemek için iyi oturmalı (glokom riski).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "adrenalin",
+      "tradeName": "Adrenalin (Epinefrin)",
+      "otherTradeNames": [
+        "Penepin",
+        "Epijet"
+      ],
+      "activeIngredient": "Epinefrin (Adrenalin)",
+      "atc": "C01CA24",
+      "form": "Ampul / Oto-enjektör (EpiPen)",
+      "strength": "1 mg/1 mL (1:1000), 0,1 mg/mL (1:10000)",
+      "indications": [
+        "Anafilaksi (BİRİNCİ BASAMAK)",
+        "Kardiyak arrest",
+        "Şiddetli astım/krup",
+        "Septik şok (vazopressör)"
+      ],
+      "contraindications": [
+        "Hayatı tehdit eden durumda mutlak kontrendikasyon YOKTUR"
+      ],
+      "dosage": {
+        "adult": "Anafilaksi: 0,3-0,5 mg IM (1:1000) anterolateral uyluğa, 5-15 dk arayla tekrar. Arrest: 1 mg IV/IO her 3-5 dk",
+        "pediatric": "Anafilaksi: 0,01 mg/kg IM (max 0,5 mg). Arrest: 0,01 mg/kg IV/IO (1:10000)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Çarpıntı",
+          "Tremor",
+          "Anksiyete",
+          "Solukluk",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Aritmi (VT/VF)",
+          "Hipertansif kriz",
+          "Miyokard iskemisi",
+          "Pulmoner ödem"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Non-selektif beta bloker",
+          "note": "Hipertansif kriz, refleks bradikardi"
+        },
+        {
+          "drug": "TCA",
+          "note": "Kardiyovasküler etki artar"
+        },
+        {
+          "drug": "MAO inhibitörü",
+          "note": "Hipertansif kriz"
+        }
+      ],
+      "antidote": "Aşırı dozda: alfa-bloker (fentolamin), beta-bloker (dikkatli), nitrogliserin",
+      "pregnancy": "C — anafilaksi tedavisi hayat kurtarıcıdır",
+      "breastfeeding": "Tek doz uyumlu",
+      "storage": "2-25°C, ışıktan korunur. Ampul rengi koyulaşmışsa KULLANILMAZ",
+      "notes": "ANAFILAKSİDE GECİKMEDEN IM uygulanmalı. SC ABSORPSIYON YAVAŞ — IM ve uyluk anterolateral tercih edilir. IV bolus sadece arrestte; aksi takdirde IV infüzyon olarak verilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "atropin",
+      "tradeName": "Atropin sülfat",
+      "otherTradeNames": [],
+      "activeIngredient": "Atropin",
+      "atc": "A03BA01",
+      "form": "Ampul",
+      "strength": "0,5 mg/1 mL, 1 mg/1 mL",
+      "indications": [
+        "Semptomatik bradikardi",
+        "Organofosfat/karbamat zehirlenmesi (antidot)",
+        "Premedikasyon (sekresyon azaltma)",
+        "Asistol/PEA (rutin önerilmez)"
+      ],
+      "contraindications": [
+        "Hayatı tehdit eden durumda mutlak yok. Dar açılı glokom, prostatizm — rölatif"
+      ],
+      "dosage": {
+        "adult": "Bradikardi: 0,5-1 mg IV bolus, 3-5 dk arayla (max 3 mg). Organofosfat: 1-2 mg IV, sekresyon azalana ve atropinize olana kadar 5-10 dk arayla katlanarak tekrarla",
+        "pediatric": "Bradikardi: 0,02 mg/kg IV (min 0,1 mg, max 0,5 mg). Organofosfat: 0,05 mg/kg, gerekirse 5 dk arayla katlanarak",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Taşikardi",
+          "Ağız kuruluğu",
+          "Midriazis",
+          "Görme bulanıklığı"
+        ],
+        "serious": [
+          "Hipertermi",
+          "Konvülsiyon",
+          "Konfüzyon/delirium",
+          "İdrar retansiyonu",
+          "Akut glokom"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Diğer antikolinerjikler",
+          "note": "Etki katlanır"
+        },
+        {
+          "drug": "TCA, antihistaminik",
+          "note": "Antikolinerjik yük"
+        }
+      ],
+      "antidote": "Aşırı doz: Fizostigmin (santral antikolinerjik sendromda 1-2 mg IV yavaş)",
+      "pregnancy": "C — endikasyon varsa kullanılır",
+      "breastfeeding": "Tek doz uyumlu, süt üretimini azaltabilir",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Organofosfat zehirlenmesinde DOZ SINIRI YOK — sekresyonlar azalana kadar artırılır. Bradikardide 0,5 mg'dan az verilirse paradoksal bradikardi olabilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "noradrenalin",
+      "tradeName": "Noradrenalin (Norepinefrin)",
+      "otherTradeNames": [
+        "Norepi"
+      ],
+      "activeIngredient": "Norepinefrin",
+      "atc": "C01CA03",
+      "form": "Ampul (IV infüzyon)",
+      "strength": "4 mg/4 mL, 8 mg/4 mL",
+      "indications": [
+        "Septik şok (birinci basamak vazopressör)",
+        "Diğer dağılım/kardiyojenik şoklarda hipotansiyon"
+      ],
+      "contraindications": [
+        "Mezenterik/periferik vasküler tromboz (rölatif)",
+        "Hipovoleminin düzeltilmeden başlanması"
+      ],
+      "dosage": {
+        "adult": "0,05-0,5 mcg/kg/dk IV infüzyon (santral yol tercih). Hedef MAP ≥65 mmHg",
+        "pediatric": "0,05-2 mcg/kg/dk IV infüzyon",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Taşikardi",
+          "Anksiyete",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Periferik iskemi/nekroz (ekstravazasyon)",
+          "Aritmi",
+          "Şiddetli hipertansiyon",
+          "Miyokard iskemisi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "MAO inhibitörleri",
+          "note": "Hipertansif kriz"
+        },
+        {
+          "drug": "TCA",
+          "note": "Etki artar/uzar"
+        }
+      ],
+      "antidote": "Ekstravazasyon: enjeksiyon bölgesine fentolamin 5-10 mg + lokal soğuk uygulama",
+      "pregnancy": "C — yaşamı tehdit ediyorsa kullanılır",
+      "breastfeeding": "Veri sınırlı",
+      "storage": "25°C altında, ışıktan korunur. Hazırlandıktan sonra 24 saat içinde kullanılır",
+      "notes": "MUTLAKA santral kateterden verilmeli — periferik kullanım son çare ve kısa süreli (büyük vasküler iskemi riski). Sıvı resüsitasyonu yetersizse başlatılır, tek başına yetmez.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "dopamin",
+      "tradeName": "Dopamin",
+      "otherTradeNames": [],
+      "activeIngredient": "Dopamin",
+      "atc": "C01CA04",
+      "form": "Ampul (IV infüzyon)",
+      "strength": "200 mg/5 mL, 40 mg/mL",
+      "indications": [
+        "Kardiyojenik şok",
+        "Septik şok (alternatif)",
+        "Semptomatik bradikardi (atropine yanıtsız)"
+      ],
+      "contraindications": [
+        "Feokromositoma",
+        "Tedavi edilmemiş VT/VF",
+        "Hipertiroidi (rölatif)"
+      ],
+      "dosage": {
+        "adult": "2-20 mcg/kg/dk IV infüzyon. <5: 'renal' doz tartışmalı. 5-10: beta. >10: alfa baskın",
+        "pediatric": "Aynı doz aralığı",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Taşikardi",
+          "Çarpıntı",
+          "Bulantı",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Aritmi",
+          "Periferik iskemi (ekstravazasyon)",
+          "Şiddetli hipertansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "MAO inhibitörleri",
+          "note": "Hipertansif kriz — doz %90 azaltılır"
+        },
+        {
+          "drug": "TCA/fenitoin",
+          "note": "Etki artar/aritmi"
+        }
+      ],
+      "antidote": "Ekstravazasyon: fentolamin 5-10 mg lokal infiltre",
+      "pregnancy": "C",
+      "breastfeeding": "Süt üretimini azaltır",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Santral yol tercih edilir. Septik şokta noradrenalin daha çok tercih edilir (aritmi riski daha az).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "naloxone",
+      "tradeName": "Narcanti (Nalokson)",
+      "otherTradeNames": [
+        "Naloksan"
+      ],
+      "activeIngredient": "Nalokson",
+      "atc": "V03AB15",
+      "form": "Ampul / İntranazal sprey",
+      "strength": "0,4 mg/1 mL, 4 mg intranazal",
+      "indications": [
+        "Opioid aşırı dozu (solunum depresyonu)",
+        "Opioid kaynaklı sedasyon tersine çevirme"
+      ],
+      "contraindications": [
+        "Nalokson alerjisi"
+      ],
+      "dosage": {
+        "adult": "0,04-0,4 mg IV/IM/SC, 2-3 dk arayla titre (max 10 mg). İntranazal: 4 mg",
+        "pediatric": "0,01-0,1 mg/kg IV (max 2 mg/doz), gerekirse 2-3 dk arayla tekrar",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma",
+          "Terleme",
+          "Taşikardi"
+        ],
+        "serious": [
+          "Akut çekilme sendromu (bağımlılarda — ajitasyon, kusma, taşikardi)",
+          "Pulmoner ödem (nadir)",
+          "Aritmi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Opioidler",
+          "note": "Beklenen — opioid etkisini geri çevirir"
+        }
+      ],
+      "antidote": "—",
+      "pregnancy": "C — gerekirse kullanılır",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "ETKİ SÜRESİ KISA (30-90 dk) — opioidler daha uzun etkili olabilir, hasta tekrar depresyona girebilir. Sürekli izlem şart. Solunum sayısı, GKS, SpO2 takibi.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "flumazenil",
+      "tradeName": "Anexate (Flumazenil)",
+      "otherTradeNames": [
+        "Flumazil"
+      ],
+      "activeIngredient": "Flumazenil",
+      "atc": "V03AB25",
+      "form": "Ampul",
+      "strength": "0,5 mg/5 mL, 1 mg/10 mL",
+      "indications": [
+        "Benzodiazepin sedasyonunun geri çevrilmesi",
+        "BDZ aşırı dozu (seçilmiş)"
+      ],
+      "contraindications": [
+        "BDZ'a kronik bağımlılık",
+        "TCA veya konvülsan ko-intoksikasyonu",
+        "Konvülsiyon kontrolü için BDZ alan epilepsi hastası",
+        "Yükselmiş İKB"
+      ],
+      "dosage": {
+        "adult": "0,2 mg IV 15 sn, gerekirse 0,1 mg/dk tekrar (max 1 mg). Resedasyon olursa 20 dk sonra tekrar",
+        "pediatric": "0,01 mg/kg IV (max 0,2 mg), 1 dk arayla tekrar",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma",
+          "Baş dönmesi",
+          "Anksiyete"
+        ],
+        "serious": [
+          "Konvülsiyon (BDZ bağımlılarında çekilme nöbeti)",
+          "Aritmi",
+          "Resedasyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "BDZ'ler",
+          "note": "Beklenen — etkilerini geri çevirir"
+        },
+        {
+          "drug": "Konvülsanlar (TCA, kokain)",
+          "note": "Konvülsiyon riski belirgin artar"
+        }
+      ],
+      "antidote": "—",
+      "pregnancy": "C — sadece gerekirse",
+      "breastfeeding": "Veri sınırlı",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Etki süresi 30-60 dk — BDZ'ler daha uzun, resedasyon olabilir. SADECE saf BDZ intoksikasyonunda — karışık zehirlenmede konvülsiyon riski yüksek.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "nac",
+      "tradeName": "Asist (N-asetilsistein)",
+      "otherTradeNames": [
+        "NAC Long",
+        "Acetin",
+        "Mukoliz",
+        "Asibron"
+      ],
+      "activeIngredient": "N-asetilsistein (NAC)",
+      "atc": "V03AB23",
+      "form": "Ampul / Efervesan tablet / Granül",
+      "strength": "300 mg/3 mL ampul, 200-600 mg granül",
+      "indications": [
+        "Parasetamol intoksikasyonu (antidot)",
+        "Mukolitik (KOAH, kistik fibrozis)",
+        "Kontrast nefropati profilaksisi (tartışmalı)"
+      ],
+      "contraindications": [
+        "NAC alerjisi"
+      ],
+      "dosage": {
+        "adult": "Parasetamol antidot IV (21 saat rejimi): 150 mg/kg 1 saatte + 50 mg/kg 4 saatte + 100 mg/kg 16 saatte. Oral: 140 mg/kg yükleme + 70 mg/kg 4 saatte bir 17 doz",
+        "pediatric": "Aynı rejim, kilo bazlı",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma (oral)",
+          "Flushing",
+          "Döküntü (IV — anafilaktoid)"
+        ],
+        "serious": [
+          "Anafilaktoid reaksiyon (IV — bronkospazm, hipotansiyon)",
+          "Bronkospazm (astımlılarda)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Aktif kömür",
+          "note": "Oral NAC emilimini azaltır"
+        }
+      ],
+      "antidote": "Anafilaktoid: infüzyonu durdur, antihistaminik, gerekirse adrenalin",
+      "pregnancy": "B — hayat kurtarıcıdır (parasetamol intoksikasyonu)",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "Parasetamol alımından 8-10 saat içinde başlanırsa en etkilidir. Rumack-Matthew nomogramı ile karar verilir. IV verilirken anafilaktoid reaksiyon en sık ilk saatte.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "aktif-komur",
+      "tradeName": "Aktif kömür (Carbomix)",
+      "otherTradeNames": [
+        "Carbosylane",
+        "Norit"
+      ],
+      "activeIngredient": "Aktif kömür",
+      "atc": "A07BA01",
+      "form": "Oral süspansiyon / Granül",
+      "strength": "25 g, 50 g şişe",
+      "indications": [
+        "Akut oral zehirlenme (1 saat içinde alınmış)",
+        "Tekrarlanan doz: karbamazepin, fenobarbital, kinin, teofilin, dapson"
+      ],
+      "contraindications": [
+        "Korozif madde alımı (asit/alkali)",
+        "Hidrokarbon alımı (aspirasyon riski)",
+        "İleus/perforasyon",
+        "Korunmamış hava yolu (bilinç kapalı, intübe değil)"
+      ],
+      "dosage": {
+        "adult": "50-100 g tek doz oral/NG. Tekrarlanan: 25-50 g 4 saatte bir",
+        "pediatric": "1-2 g/kg (max 50 g) tek doz",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Konstipasyon",
+          "Siyah dışkı",
+          "Bulantı/kusma"
+        ],
+        "serious": [
+          "Aspirasyon pnömonisi",
+          "Bağırsak obstrüksiyonu (tekrarlanan dozda)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Oral ilaçlar",
+          "note": "Emilimi azaltır — 2 saat ara verilir"
+        }
+      ],
+      "antidote": "—",
+      "pregnancy": "Uyumlu",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında, sızdırmaz kapakta",
+      "notes": "Etki için ilk 1 saat içinde verilmesi gerekir. Şuuru kapalı hastada hava yolu korunmadan VERİLMEZ (aspirasyon). Demir, lityum, ağır metaller, alkollere etkili DEĞİLDİR.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "calcium-gluconate",
+      "tradeName": "Kalsiyum glukonat",
+      "otherTradeNames": [],
+      "activeIngredient": "Kalsiyum glukonat",
+      "atc": "A12AA03",
+      "form": "Ampul (IV)",
+      "strength": "%10 — 1 g/10 mL",
+      "indications": [
+        "Semptomatik hipokalsemi",
+        "Hiperkalemi (kardiyak koruma)",
+        "Kalsiyum kanal blokeri/beta bloker toksisitesi",
+        "Hidroflorik asit yanığı",
+        "Mg sülfat toksisitesi"
+      ],
+      "contraindications": [
+        "Hiperkalsemi",
+        "Digoksin toksisitesi (rölatif — dikkatli, yavaş)",
+        "Ventriküler fibrilasyon"
+      ],
+      "dosage": {
+        "adult": "Hiperkalemi: 1-3 g (10-30 mL %10) IV yavaş (2-5 dk). Hipokalsemi: 1-2 g yavaş IV. CCB toksisitesi: 1-3 g yükleme, infüzyon",
+        "pediatric": "0,5-1 mL/kg %10 (max 30 mL) yavaş IV",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Sıcaklık hissi",
+          "Enjeksiyon yerinde tahriş"
+        ],
+        "serious": [
+          "Bradikardi/asistol (hızlı IV)",
+          "Ekstravazasyon → cilt nekrozu",
+          "Hiperkalsemi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Digoksin",
+          "note": "Aritmi riski artar — yavaş ve dikkatli"
+        },
+        {
+          "drug": "Seftriakson (yenidoğan)",
+          "note": "Aynı hatta verilemez (presipitat)"
+        }
+      ],
+      "antidote": "Hiperkalsemi: IV sıvı, furosemid, bisfosfonat",
+      "pregnancy": "C — endikasyon varsa kullanılır",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "Kalsiyum klorürden 3 kat daha az elementel Ca içerir ama periferik damardan daha güvenli. Hiperkalemide kardiyak korumayı dakikalar içinde sağlar, K düzeyini DÜŞÜRMEZ.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "vitamin-k",
+      "tradeName": "Konakion (Vitamin K1)",
+      "otherTradeNames": [
+        "K1 vitamini ampul"
+      ],
+      "activeIngredient": "Fitomenadion (Vitamin K1)",
+      "atc": "B02BA01",
+      "form": "Ampul / Oral",
+      "strength": "10 mg/1 mL",
+      "indications": [
+        "Warfarin aşırı dozu / yüksek INR",
+        "K vitamini eksikliği",
+        "Yenidoğan hemorajik hastalığı profilaksisi"
+      ],
+      "contraindications": [
+        "Aşırı duyarlılık"
+      ],
+      "dosage": {
+        "adult": "INR yüksek kanama yok: 1-2,5 mg oral. INR 4,5-10 kanama yok: 2,5 mg oral. Major kanama: 5-10 mg yavaş IV + 4F-PCC",
+        "pediatric": "Yenidoğan profilaksisi: 0,5-1 mg IM tek doz",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Enjeksiyon yerinde reaksiyon",
+          "Tat değişikliği"
+        ],
+        "serious": [
+          "Anafilaktoid reaksiyon (hızlı IV — fatal olabilir)",
+          "Hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "Beklenen — etkisini geri çevirir"
+        }
+      ],
+      "antidote": "—",
+      "pregnancy": "Uyumlu",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV verilirken DİLÜE EDİLEREK (50 mL serumla) ve en az 30 dakikada infüzyon — hızlı bolus anafilaktoid reaksiyonla fatal olabilir. Oral yol kanama yoksa tercih edilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "protamin",
+      "tradeName": "Protamin sülfat",
+      "otherTradeNames": [],
+      "activeIngredient": "Protamin sülfat",
+      "atc": "V03AB14",
+      "form": "Ampul",
+      "strength": "1000 IU/mL (yaklaşık 10 mg/mL)",
+      "indications": [
+        "Heparin (UFH) etkisinin geri çevrilmesi",
+        "LMWH (enoksaparin) — kısmen",
+        "Kardiyopulmoner bypass sonrası"
+      ],
+      "contraindications": [
+        "Önceden protamine ciddi reaksiyon",
+        "Protamin alerjisi"
+      ],
+      "dosage": {
+        "adult": "UFH: 1 mg protamin, son 2-3 saatte verilen 100 IU heparini nötralize eder (max tek doz 50 mg). LMWH: 1 mg protamin, son 8 saatte verilen 1 mg enoksaparini (kısmi)",
+        "pediatric": "Aynı prensip — kilo bazlı",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Yüz kızarması",
+          "Bradikardi (hızlı IV)"
+        ],
+        "serious": [
+          "Anafilaksi (özellikle balık alerjisi, vazektomi öyküsü, önceden NPH insülin)",
+          "Pulmoner hipertansiyon",
+          "Şiddetli hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Heparin",
+          "note": "Beklenen — etkisini geri çevirir"
+        }
+      ],
+      "antidote": "Anafilakside adrenalin, kortikosteroid, sıvı",
+      "pregnancy": "C — endikasyon varsa kullanılır",
+      "breastfeeding": "Veri sınırlı",
+      "storage": "2-25°C, ışıktan korunur",
+      "notes": "IV en az 10 dakikada (max 5 mg/dk). Yüksek doz protamin kendisi antikoagülan etki yapabilir. NPH insülin/balık alerjisi/vazektomi öyküsünde anafilaksi riski yüksek.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "magnezyum-sulfat",
+      "tradeName": "Magnezyum sülfat",
+      "otherTradeNames": [],
+      "activeIngredient": "Magnezyum sülfat",
+      "atc": "B05XA05",
+      "form": "Ampul (IV/IM)",
+      "strength": "%15 — 1,5 g/10 mL, %50 — 5 g/10 mL",
+      "indications": [
+        "Preeklampsi/eklampsi",
+        "Torsades de pointes",
+        "Şiddetli astım atağı (yardımcı)",
+        "Hipomagnezemi"
+      ],
+      "contraindications": [
+        "Şiddetli böbrek yetmezliği (dikkatli)",
+        "AV blok",
+        "Miyastenia gravis"
+      ],
+      "dosage": {
+        "adult": "Eklampsi: 4-6 g IV yükleme (15-20 dk), sonra 1-2 g/saat infüzyon. Torsades: 1-2 g IV 5 dk. Astım: 2 g IV 20 dk",
+        "pediatric": "Astım: 25-50 mg/kg (max 2 g) IV 20 dk. Torsades: 25-50 mg/kg",
+        "renal": "GFR <30: doz %50 azaltılır, Mg düzeyi takip",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Flushing",
+          "Terleme",
+          "Bulantı"
+        ],
+        "serious": [
+          "Hipermagnezemi: derin tendon refleksleri kaybı (>4 mEq/L), solunum depresyonu (>10 mEq/L), kardiyak arrest (>15 mEq/L)",
+          "Hipotansiyon",
+          "Bradikardi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Kalsiyum kanal blokerleri",
+          "note": "Hipotansiyon"
+        },
+        {
+          "drug": "Nöromüsküler blokerler",
+          "note": "Etki uzar/şiddetlenir"
+        }
+      ],
+      "antidote": "Toksisite: kalsiyum glukonat 1 g IV yavaş",
+      "pregnancy": "A (eklampsi) — endikasyon varsa güvenli",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "Eklampsi tedavisinde refleks, solunum sayısı, idrar çıkışı saatlik takip — toksisite belirtisinde kalsiyum glukonat hazır olmalı.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "contramal",
+      "tradeName": "Contramal",
+      "otherTradeNames": [
+        "Tramundal",
+        "Tramosan",
+        "Tramadolor"
+      ],
+      "activeIngredient": "Tramadol HCl",
+      "atc": "N02AX02",
+      "form": "Kapsül / Ampul / Damla / Retard tablet",
+      "strength": "50 mg, 100 mg ampul, 100 mg retard, 100 mg/mL damla",
+      "indications": [
+        "Orta-şiddetli ağrı (akut/kronik)",
+        "Postoperatif ağrı"
+      ],
+      "contraindications": [
+        "Tramadol alerjisi",
+        "Akut alkol/sedatif/opioid intoksikasyonu",
+        "MAO inhibitörü kullanımı (son 14 gün)",
+        "Kontrolsüz epilepsi"
+      ],
+      "dosage": {
+        "adult": "50-100 mg 4-6 saatte bir oral/IV/IM. Max 400 mg/gün",
+        "pediatric": "≥12 yaş: erişkin gibi. 1-2 mg/kg/doz (max 100 mg/doz)",
+        "renal": "GFR <30: doz aralığı 12 saate uzatılır, max 200 mg/gün",
+        "hepatic": "Doz azaltılır (12 saatte bir 50 mg)"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma",
+          "Baş dönmesi",
+          "Sedasyon",
+          "Ağız kuruluğu",
+          "Kabızlık"
+        ],
+        "serious": [
+          "Konvülsiyon (özellikle yüksek doz)",
+          "Serotonin sendromu (SSRI ile)",
+          "Solunum depresyonu",
+          "Bağımlılık"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "SSRI/SNRI/TCA",
+          "note": "Serotonin sendromu, konvülsiyon riski"
+        },
+        {
+          "drug": "MAO inhibitörü",
+          "note": "Kontrendike — şiddetli serotonin sendromu"
+        },
+        {
+          "drug": "Karbamazepin",
+          "note": "Tramadol etkisini azaltır"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR artar"
+        }
+      ],
+      "antidote": "Solunum depresyonu için Nalokson — TAM tersine çevirmez, dikkatli titrasyon. Konvülsiyon için benzodiazepin.",
+      "pregnancy": "C — gerekirse kısa süre",
+      "breastfeeding": "Düşük doz kısa süre uyumlu, dikkat",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Yeşil reçeteli. Bağımlılık riski var. Yaşlılarda düşme/konfüzyon riski.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "morfin",
+      "tradeName": "Morfin sülfat",
+      "otherTradeNames": [
+        "MS Contin (retard)"
+      ],
+      "activeIngredient": "Morfin sülfat",
+      "atc": "N02AA01",
+      "form": "Ampul / Retard tablet",
+      "strength": "10 mg/1 mL, 20 mg/1 mL ampul",
+      "indications": [
+        "Şiddetli akut ağrı (MI, postoperatif, kanser)",
+        "Akut akciğer ödemi",
+        "Yanık ağrısı",
+        "Palyatif bakım"
+      ],
+      "contraindications": [
+        "Şiddetli solunum depresyonu",
+        "Akut astım atağı",
+        "Paralitik ileus",
+        "İntrakranial basınç artışı (rölatif)",
+        "MAO inhibitörü"
+      ],
+      "dosage": {
+        "adult": "IV: 2-4 mg yavaş bolus, 5-15 dk aralarla titre. SC/IM: 5-10 mg 4 saatte bir",
+        "pediatric": "0,05-0,1 mg/kg IV yavaş (max 4 mg/doz)",
+        "renal": "GFR <30: doz azaltılır, aralık uzatılır",
+        "hepatic": "Doz belirgin azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma",
+          "Sedasyon",
+          "Kabızlık",
+          "Miyoz",
+          "Kaşıntı"
+        ],
+        "serious": [
+          "Solunum depresyonu",
+          "Hipotansiyon",
+          "Bradikardi",
+          "Bağımlılık",
+          "Tolerans"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Diğer santral depresanlar (BDZ, alkol)",
+          "note": "Sinerjik solunum depresyonu"
+        },
+        {
+          "drug": "MAO inhibitörü",
+          "note": "Kontrendike — hipertansif kriz/koma"
+        }
+      ],
+      "antidote": "Nalokson 0,04-0,4 mg IV titre — etki süresi morfinden kısa, infüzyon gerekebilir",
+      "pregnancy": "C (uzun süreli D — yenidoğan çekilme sendromu)",
+      "breastfeeding": "Az süte geçer, dikkat",
+      "storage": "Kontrollü madde — kilitli dolapta, ışıktan korunur, 25°C altında",
+      "notes": "Kırmızı reçeteli, kontrollü madde. Solunum sayısı/SpO2/GKS sık takip. Naloksan/ambu hazır olsun. AKİ ödeminde ön yük azaltır, anksiyolitik.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "fentanil",
+      "tradeName": "Fentanil",
+      "otherTradeNames": [
+        "Durogesic (transdermal)",
+        "Talinat",
+        "Fentanyl Janssen"
+      ],
+      "activeIngredient": "Fentanil sitrat",
+      "atc": "N01AH01",
+      "form": "Ampul / Transdermal flaster",
+      "strength": "0,05 mg/mL (50 mcg/mL) ampul; 12-25-50-75-100 mcg/saat flaster",
+      "indications": [
+        "Anestezi indüksiyonu/idamesi",
+        "Postoperatif analjezi",
+        "Şiddetli kronik ağrı (transdermal)"
+      ],
+      "contraindications": [
+        "Şiddetli solunum yetmezliği",
+        "Opioid alerjisi",
+        "Akut karın (tanı maskeler)",
+        "MAO inhibitörü"
+      ],
+      "dosage": {
+        "adult": "Sedasyon/analjezi IV: 25-100 mcg yavaş bolus. Anestezi: 2-10 mcg/kg. Transdermal: opioid naif değilse 12-25 mcg/h başla",
+        "pediatric": "1-3 mcg/kg IV yavaş",
+        "renal": "Doz ayarı gerekmez (metabolizma hepatik)",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Sedasyon",
+          "Bulantı",
+          "Kaşıntı",
+          "Bradikardi",
+          "Miyoz"
+        ],
+        "serious": [
+          "Solunum depresyonu (HIZLI başlangıçlı)",
+          "Göğüs duvarı rijiditesi (hızlı bolusta)",
+          "Hipotansiyon",
+          "Bağımlılık"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "BDZ/Propofol",
+          "note": "Sinerjik solunum depresyonu — dikkatli titrasyon"
+        },
+        {
+          "drug": "CYP3A4 inhibitörü (klaritromisin, ritonavir)",
+          "note": "Fentanil düzeyi artar"
+        }
+      ],
+      "antidote": "Nalokson — etki süresi fentanilden çok daha kısa, devamlı infüzyon ya da tekrar dozlar gerekir",
+      "pregnancy": "C — gerekirse",
+      "breastfeeding": "Tek doz sonrası 4-6 saat ara",
+      "storage": "Kontrollü madde, kilitli dolap, 25°C altında, ışıktan korunur",
+      "notes": "Kırmızı reçeteli. Etki başlangıcı çok hızlı (1-2 dk IV). Göğüs duvarı rijiditesi hızlı boluste — yavaş ver. Transdermal flaster ısı/ateş ile emilim artar.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "novalgin",
+      "tradeName": "Novalgin",
+      "otherTradeNames": [
+        "Andolex",
+        "Optalgin"
+      ],
+      "activeIngredient": "Metamizol sodyum (Dipiron)",
+      "atc": "N02BB02",
+      "form": "Tablet / Ampul",
+      "strength": "500 mg tablet, 1 g/2 mL ampul",
+      "indications": [
+        "Şiddetli ağrı (renal kolik, biliyer kolik, postoperatif)",
+        "Yüksek ateş (dirençli)"
+      ],
+      "contraindications": [
+        "Metamizol/pirazolon alerjisi",
+        "Agranülositoz öyküsü",
+        "G6PD eksikliği",
+        "Gebelik 3. trimester",
+        "Akut intermittan porfiri"
+      ],
+      "dosage": {
+        "adult": "Oral: 500-1000 mg 3-4x/gün. IV/IM: 1-2,5 g yavaş, 6-8 saatte bir. Max 5 g/gün",
+        "pediatric": "≥3 ay: 8-16 mg/kg/doz, 4-6 saatte bir",
+        "renal": "Doz azaltılır",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Hipotansiyon (özellikle hızlı IV)",
+          "Bulantı",
+          "Terleme"
+        ],
+        "serious": [
+          "AGRANÜLOSİTOZ (nadir ama fatal)",
+          "Anafilaksi",
+          "Stevens-Johnson",
+          "Hipotansif şok"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Klorpromazin",
+          "note": "Şiddetli hipotermi"
+        },
+        {
+          "drug": "Siklosporin",
+          "note": "Siklosporin düzeyi azalır"
+        }
+      ],
+      "antidote": "Spesifik yok. Anafilakside adrenalin. Agranülositozda G-CSF + izolasyon",
+      "pregnancy": "1-2. trimester C, 3. trimester KONTRENDİKE",
+      "breastfeeding": "Önerilmez (48 saat ara)",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "IV verirken 1 g'ı en az 15 dakikada infüze edin (hızlı bolus şiddetli hipotansiyon). Renal kolikte tercih edilir. Birçok Avrupa ülkesinde yasaklı (agranülositoz).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "vancomycin",
+      "tradeName": "Vancotek (Vankomisin)",
+      "otherTradeNames": [
+        "Vancomycin Eczacıbaşı",
+        "Edicin"
+      ],
+      "activeIngredient": "Vankomisin HCl",
+      "atc": "J01XA01",
+      "form": "Flakon (IV) / Kapsül (oral)",
+      "strength": "500 mg, 1 g flakon",
+      "indications": [
+        "MRSA enfeksiyonları",
+        "Ciddi gram (+) enfeksiyonlar",
+        "C. difficile koliti (oral)",
+        "Penisilin alerjisinde alternatif"
+      ],
+      "contraindications": [
+        "Vankomisin alerjisi"
+      ],
+      "dosage": {
+        "adult": "IV: 15-20 mg/kg 8-12 saatte bir, max 2 g/doz. Yükleme: 25-30 mg/kg. Oral (C.diff): 125-500 mg 6 saatte bir",
+        "pediatric": "10-15 mg/kg/doz IV, 6-8 saatte bir",
+        "renal": "GFR'a göre belirgin doz ayarı + serum düzeyi takibi",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Red man sendromu (hızlı infüzyon)",
+          "Flebit",
+          "Tat değişikliği"
+        ],
+        "serious": [
+          "Nefrotoksisite",
+          "Ototoksisite",
+          "Nötropeni",
+          "DRESS sendromu",
+          "Stevens-Johnson"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Aminoglikozid",
+          "note": "Nefro/ototoksisite artar"
+        },
+        {
+          "drug": "Piperasilin-tazobaktam",
+          "note": "AKI riski artar"
+        }
+      ],
+      "antidote": "Red man sendromu: infüzyonu yavaşlat + antihistaminik (difenhidramin)",
+      "pregnancy": "C — gerekirse",
+      "breastfeeding": "Az süte geçer, oral biyoyararlanım yok, uyumlu",
+      "storage": "Toz 25°C altında. Sulandırıldıktan sonra buzdolabında 14 gün",
+      "notes": "Her IV doz en az 60 dakikada infüze edilir (1 g için). Çukur düzey hedefi: 15-20 mg/L (ciddi enfeksiyon). Renal fonksiyon takibi.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "meronem",
+      "tradeName": "Meronem",
+      "otherTradeNames": [
+        "Meropen",
+        "Penem",
+        "Mercerin"
+      ],
+      "activeIngredient": "Meropenem",
+      "atc": "J01DH02",
+      "form": "Flakon (IV)",
+      "strength": "500 mg, 1 g",
+      "indications": [
+        "Ciddi/hastane kaynaklı enfeksiyonlar",
+        "Febril nötropeni",
+        "Komplike intra-abdominal",
+        "Bakteriyel menenjit",
+        "Septisemi"
+      ],
+      "contraindications": [
+        "Karbapenem/penisilin alerjisi (şiddetli)"
+      ],
+      "dosage": {
+        "adult": "500 mg - 2 g IV, 8 saatte bir. Menenjit: 2 g 8 saatte bir",
+        "pediatric": "10-40 mg/kg/doz 8 saatte bir (max 2 g)",
+        "renal": "GFR'ye göre belirgin doz ayarı",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal",
+          "Döküntü",
+          "Enjeksiyon yerinde reaksiyon"
+        ],
+        "serious": [
+          "Konvülsiyon (özellikle SSS hasarı/yüksek doz)",
+          "C. difficile koliti",
+          "Anafilaksi",
+          "Trombositopeni"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Valproik asit",
+          "note": "Valproat düzeyi belirgin azalır — nöbet riski"
+        },
+        {
+          "drug": "Probenesid",
+          "note": "Meropenem düzeyi artar"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B — gerekirse",
+      "breastfeeding": "Az süte geçer, kısa süre uyumlu",
+      "storage": "Toz 25°C altında. Sulandırıldıktan sonra oda ısısında 4 saat",
+      "notes": "Geniş spektrum — pseudomonas dahil. Antibiyotik yönetimi (stewardship) kapsamında, gerekçe önemli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "tazocin",
+      "tradeName": "Tazocin",
+      "otherTradeNames": [
+        "Pipraks",
+        "Bactam-T",
+        "Picyn"
+      ],
+      "activeIngredient": "Piperasilin + Tazobaktam",
+      "atc": "J01CR05",
+      "form": "Flakon (IV)",
+      "strength": "2 g + 0,25 g, 4 g + 0,5 g",
+      "indications": [
+        "Ciddi hastane kaynaklı pnömoni",
+        "Komplike intra-abdominal",
+        "Diabetik ayak",
+        "Febril nötropeni",
+        "Septisemi"
+      ],
+      "contraindications": [
+        "Penisilin/beta-laktam alerjisi"
+      ],
+      "dosage": {
+        "adult": "4,5 g IV, 6-8 saatte bir. Genelde 30 dakikalık infüzyon (uzun infüzyon 4 saat daha etkili olabilir)",
+        "pediatric": "≥2 ay: 100 mg/kg/doz (piperasilin) 6-8 saatte bir, max 4,5 g",
+        "renal": "GFR <40: doz aralığı uzatılır (8-12 saat)",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal",
+          "Döküntü",
+          "Bulantı"
+        ],
+        "serious": [
+          "Akut böbrek hasarı (özellikle vankomisin ile)",
+          "C. difficile koliti",
+          "Hipokalemi",
+          "Anafilaksi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Vankomisin",
+          "note": "AKI riski artar"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "MTX toksisitesi"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "Toz 25°C altında. Sulandırıldıktan sonra oda ısısında 24 saat",
+      "notes": "Geniş spektrum, pseudomonas dahil. Anti-anaerobik etki.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "flagyl",
+      "tradeName": "Flagyl",
+      "otherTradeNames": [
+        "Nidazol",
+        "Metrazol",
+        "Rozex"
+      ],
+      "activeIngredient": "Metronidazol",
+      "atc": "J01XD01",
+      "form": "Tablet / Süspansiyon / Flakon / Ovül",
+      "strength": "250-500 mg tablet, 200 mg/5 mL süsp, 500 mg/100 mL flakon",
+      "indications": [
+        "Anaerobik bakteri enfeksiyonları",
+        "C. difficile koliti",
+        "Trichomonas",
+        "Giardia, Amip",
+        "H. pylori (kombine)",
+        "Bakteriyel vajinozis"
+      ],
+      "contraindications": [
+        "Metronidazol alerjisi",
+        "Gebelik 1. trimester (rölatif)",
+        "Aktif SSS hastalığı"
+      ],
+      "dosage": {
+        "adult": "Oral: 500 mg 8-12 saatte bir, 7-14 gün. IV: 500 mg 8 saatte bir",
+        "pediatric": "7,5 mg/kg/doz 8 saatte bir (max 500 mg)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Ciddi yetmezlikte doz %50 azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Metalik tat",
+          "Bulantı",
+          "Baş ağrısı",
+          "Koyu idrar"
+        ],
+        "serious": [
+          "Periferik nöropati (uzun süreli kullanım)",
+          "Konvülsiyon",
+          "Pankreatit",
+          "Aseptik menenjit"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Alkol",
+          "note": "Disulfiram-benzeri reaksiyon — tedavi + 48 saat alkol YASAK"
+        },
+        {
+          "drug": "Warfarin",
+          "note": "INR belirgin artar"
+        },
+        {
+          "drug": "Fenobarbital",
+          "note": "Metronidazol etkisi azalır"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "B (1. trimesterde mümkünse kaçınılır)",
+      "breastfeeding": "Tek doz uygulamada 12-24 saat ara",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Alkol uyarısı hayati. Uzun süreli kullanımda nörolojik kontrol.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "bactrim",
+      "tradeName": "Bactrim",
+      "otherTradeNames": [
+        "Trimoks",
+        "Septrin",
+        "Mikrosid"
+      ],
+      "activeIngredient": "Trimetoprim + Sülfametoksazol (TMP-SMX)",
+      "atc": "J01EE01",
+      "form": "Forte tablet / Süspansiyon / Ampul",
+      "strength": "Forte: 160 mg + 800 mg. Normal: 80 mg + 400 mg",
+      "indications": [
+        "İYE",
+        "P. jirovecii pnömonisi",
+        "Toksoplazmoz",
+        "MRSA (toplum kökenli)",
+        "Şigella, Salmonella"
+      ],
+      "contraindications": [
+        "Sülfonamid alerjisi",
+        "Şiddetli karaciğer/böbrek yetmezliği",
+        "Megaloblastik anemi",
+        "Gebelik son trimester ve <2 ay bebek",
+        "G6PD eksikliği"
+      ],
+      "dosage": {
+        "adult": "Oral: 1 forte tablet 12 saatte bir, 5-14 gün. PCP tedavi: 15-20 mg/kg/gün (TMP) 3-4 dozda",
+        "pediatric": "≥2 ay: 6-12 mg/kg/gün (TMP) 2 dozda",
+        "renal": "GFR 15-30: doz yarılanır. <15: kaçınılır",
+        "hepatic": "Ciddi yetmezlikte kaçınılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Döküntü",
+          "Fotosensivite"
+        ],
+        "serious": [
+          "Stevens-Johnson sendromu",
+          "Hiperkalemi",
+          "Pansitopeni",
+          "Hepatit",
+          "Hemolitik anemi (G6PD)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "INR belirgin artar"
+        },
+        {
+          "drug": "Metotreksat",
+          "note": "Pansitopeni — kontrendike sayılır"
+        },
+        {
+          "drug": "ACE inhibitör/ARB",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "Spironolakton",
+          "note": "Hiperkalemi"
+        }
+      ],
+      "antidote": "Spesifik yok. Folinik asit (lökovorin) ciddi hematolojik toksisitede",
+      "pregnancy": "C (3. trimester D — kernikterus)",
+      "breastfeeding": "<2 ay bebek YASAK, ≥2 ay dikkatli",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Yaşlılarda K monitorizasyonu. Bol sıvı (kristalüri önleme).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "klindamisin",
+      "tradeName": "Klindan",
+      "otherTradeNames": [
+        "Cleocin",
+        "Klinoksin",
+        "Lindacin"
+      ],
+      "activeIngredient": "Klindamisin",
+      "atc": "J01FF01",
+      "form": "Kapsül / Ampul / Vajinal krem",
+      "strength": "150-300 mg kapsül, 300-600-900 mg ampul",
+      "indications": [
+        "Anaerobik enfeksiyonlar",
+        "MRSA (toplum kökenli, seçilmiş)",
+        "Aspirasyon pnömonisi",
+        "Diş enfeksiyonları",
+        "Toksik şok sendromu (yardımcı)"
+      ],
+      "contraindications": [
+        "Klindamisin/linkozamid alerjisi"
+      ],
+      "dosage": {
+        "adult": "Oral: 150-450 mg 6 saatte bir. IV: 600-900 mg 8 saatte bir (max 4,8 g/gün)",
+        "pediatric": "20-40 mg/kg/gün 3-4 dozda",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Ciddi yetmezlikte dikkatli"
+      },
+      "sideEffects": {
+        "common": [
+          "İshal (GÜÇLÜ)",
+          "Bulantı",
+          "Döküntü"
+        ],
+        "serious": [
+          "C. difficile koliti (KLASIK olarak en yüksek risk)",
+          "Şiddetli hepatotoksisite",
+          "Pansitopeni"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Nöromüsküler blokerler",
+          "note": "Etki uzar/şiddetlenir"
+        },
+        {
+          "drug": "Eritromisin",
+          "note": "Antagonist — birlikte kullanılmaz"
+        }
+      ],
+      "antidote": "Spesifik yok. C. diff koliti: oral vankomisin veya fidaksomisin",
+      "pregnancy": "B",
+      "breastfeeding": "Düşük doz kısa süreli uyumlu, yenidoğan ishalde dikkat",
+      "storage": "25°C altında",
+      "notes": "C. diff için en yüksek risk taşıyan antibiyotiklerden. İshal başlarsa kesilmesi düşünülmeli.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "tritace",
+      "tradeName": "Tritace",
+      "otherTradeNames": [
+        "Delix",
+        "Ramipro",
+        "Hipril"
+      ],
+      "activeIngredient": "Ramipril",
+      "atc": "C09AA05",
+      "form": "Tablet / Kapsül",
+      "strength": "2,5 mg, 5 mg, 10 mg",
+      "indications": [
+        "Hipertansiyon",
+        "Kalp yetmezliği",
+        "MI sonrası",
+        "Yüksek kardiyovasküler risk"
+      ],
+      "contraindications": [
+        "ACE inhibitör alerjisi/anjiyoödem öyküsü",
+        "Gebelik",
+        "Bilateral renal arter stenozu",
+        "Aliskiren ile diyabetiklerde"
+      ],
+      "dosage": {
+        "adult": "2,5-5 mg/gün başla, max 10 mg/gün. KKY: 1,25 mg başla, titre et",
+        "pediatric": "Önerilmez",
+        "renal": "GFR <30: 1,25 mg başla, max 5 mg/gün",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Kuru öksürük",
+          "Baş dönmesi",
+          "Hiperkalemi",
+          "Baş ağrısı"
+        ],
+        "serious": [
+          "Anjiyoödem",
+          "Akut böbrek hasarı",
+          "Şiddetli hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Potasyum tutucu diüretik / K desteği",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "AKI riski, antihipertansif etki azalır"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Lityum toksisitesi"
+        }
+      ],
+      "antidote": "Anjiyoödem: adrenalin (özellikle larengeal), kortikosteroid, antihistaminik",
+      "pregnancy": "D — KONTRENDİKE",
+      "breastfeeding": "Yenidoğanda önerilmez",
+      "storage": "25°C altında",
+      "notes": "ACE öksürüğü olursa ARB'a geçilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "cozaar",
+      "tradeName": "Cozaar",
+      "otherTradeNames": [
+        "Losazid",
+        "Eklips",
+        "Lostar"
+      ],
+      "activeIngredient": "Losartan potasyum",
+      "atc": "C09CA01",
+      "form": "Film tablet",
+      "strength": "50 mg, 100 mg",
+      "indications": [
+        "Hipertansiyon",
+        "Kalp yetmezliği (ACE intoleranı)",
+        "Diabetik nefropati",
+        "İnme önleme (HT + sol ventrikül hipertrofisi)"
+      ],
+      "contraindications": [
+        "Losartan alerjisi",
+        "Gebelik",
+        "Bilateral renal arter stenozu",
+        "Aliskiren ile diyabetiklerde",
+        "Ciddi hepatik yetmezlik"
+      ],
+      "dosage": {
+        "adult": "50 mg/gün başla, max 100 mg/gün",
+        "pediatric": "≥6 yaş: 0,7 mg/kg/gün (max 50 mg)",
+        "renal": "Doz ayarı gerekmez (GFR <30 dikkatli)",
+        "hepatic": "Düşük doz (25 mg) başla"
+      },
+      "sideEffects": {
+        "common": [
+          "Baş dönmesi",
+          "Hiperkalemi",
+          "Halsizlik"
+        ],
+        "serious": [
+          "Anjiyoödem (ACE'ye göre çok daha az)",
+          "Akut böbrek hasarı",
+          "Hipotansiyon"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "K tutucu diüretik / K desteği",
+          "note": "Hiperkalemi"
+        },
+        {
+          "drug": "NSAİİ",
+          "note": "AKI, antihipertansif etki azalır"
+        },
+        {
+          "drug": "Lityum",
+          "note": "Lityum toksisitesi"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "D — KONTRENDİKE",
+      "breastfeeding": "Veri sınırlı",
+      "storage": "25°C altında",
+      "notes": "ACE inhibitörü öksürüğü olan hastalar için iyi alternatif.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "cordarone",
+      "tradeName": "Cordarone",
+      "otherTradeNames": [
+        "Amyobarone",
+        "Aldarone",
+        "Ritmokard"
+      ],
+      "activeIngredient": "Amiodaron HCl",
+      "atc": "C01BD01",
+      "form": "Tablet / Ampul",
+      "strength": "200 mg tablet, 150 mg/3 mL ampul",
+      "indications": [
+        "VT/VF (ileri kardiyak yaşam desteği)",
+        "Atriyal fibrilasyon — kardiyoversiyon ve idame",
+        "Refrakter aritmiler"
+      ],
+      "contraindications": [
+        "Sinüs bradikardisi",
+        "2-3. derece AV blok (pacemaker yoksa)",
+        "Tiroid disfonksiyonu",
+        "İyot alerjisi"
+      ],
+      "dosage": {
+        "adult": "VF/VT (arrest): 300 mg IV bolus + sonra 150 mg. AF kardiyoversiyon: 150 mg yükleme 10 dk + 1 mg/dk 6 saat + 0,5 mg/dk 18 saat. Oral idame: 200 mg/gün",
+        "pediatric": "5 mg/kg IV bolus (10-20 dk)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Aktif yetmezlikte dikkatli, takipli"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Tat değişikliği",
+          "Fotosensivite",
+          "Mavi-gri cilt pigmentasyonu (uzun süre)"
+        ],
+        "serious": [
+          "Pulmoner fibrozis",
+          "Hipo/Hipertiroidi",
+          "Hepatit",
+          "QT uzaması/Torsades",
+          "Periferik nöropati",
+          "Optik nöropati"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "INR belirgin artar — Warfarin doz %30-50 azalt"
+        },
+        {
+          "drug": "Digoksin",
+          "note": "Digoksin düzeyi artar — doz yarılanır"
+        },
+        {
+          "drug": "QT uzatanlar",
+          "note": "Torsades riski"
+        },
+        {
+          "drug": "Simvastatin",
+          "note": "Rabdomiyoliz — max 20 mg"
+        }
+      ],
+      "antidote": "Spesifik yok. Torsadesde Mg sülfat",
+      "pregnancy": "D — yenidoğan tiroid disfonksiyonu",
+      "breastfeeding": "Kontrendike (iyot içeriği)",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Uzun yarılanma ömrü (~50 gün). Tiroid, KCFT, akciğer takibi gerekir. IV verilirken santral yol tercih (filebit).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "adenosine",
+      "tradeName": "Adenocard (Adenosin)",
+      "otherTradeNames": [
+        "Adenoject"
+      ],
+      "activeIngredient": "Adenosin",
+      "atc": "C01EB10",
+      "form": "Ampul",
+      "strength": "6 mg/2 mL",
+      "indications": [
+        "Paroksismal supraventriküler taşikardi (PSVT) sonlandırma",
+        "Aritmilerde tanısal yardım (WPW)"
+      ],
+      "contraindications": [
+        "2-3. derece AV blok (pacemaker yoksa)",
+        "Hasta sinüs sendromu",
+        "Şiddetli astım/KOAH (bronkospazm)",
+        "Adenozin alerjisi"
+      ],
+      "dosage": {
+        "adult": "6 mg HIZLI IV bolus (1-2 saniyede) + 20 mL salin flush. Yanıt yoksa 12 mg, sonra 12 mg",
+        "pediatric": "0,1 mg/kg (max 6 mg) hızlı IV, 0,2 mg/kg tekrar",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Yüz kızarması",
+          "Göğüs ağrısı",
+          "Dispne",
+          "Geçici asistol (3-7 saniye)"
+        ],
+        "serious": [
+          "Uzun asistol",
+          "Bronkospazm",
+          "Atriyal fibrilasyon presipitasyonu (WPW)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Teofilin/kafein",
+          "note": "Adenozin etkisini bloke eder — yüksek doz gerekebilir"
+        },
+        {
+          "drug": "Dipiridamol",
+          "note": "Etkisi belirgin artar — doz azalt"
+        }
+      ],
+      "antidote": "Yarı ömrü <10 saniye — kısa süreli izlem yeterli",
+      "pregnancy": "C — gerekirse",
+      "breastfeeding": "Tek doz uyumlu (anında metabolize)",
+      "storage": "Oda ısısında 25°C altında, ışıktan korunur. Dondurma!",
+      "notes": "MUTLAKA hızlı bolus + flush. EKG sürekli kayıt edilmeli. Defibrilasyon hazır olsun (nadiren VF). Hastaya 'birkaç saniye kısa kalp duruşu olabilir, geçer' uyarısı.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "diprivan",
+      "tradeName": "Diprivan (Propofol)",
+      "otherTradeNames": [
+        "Propofol Lipuro",
+        "Propofol-MCT",
+        "Recofol"
+      ],
+      "activeIngredient": "Propofol",
+      "atc": "N01AX10",
+      "form": "Ampul / Flakon (IV emülsiyon)",
+      "strength": "%1 (10 mg/mL), %2 (20 mg/mL)",
+      "indications": [
+        "Anestezi indüksiyonu/idamesi",
+        "YBÜ sedasyon",
+        "Prosedürel sedasyon (endoskopi vb.)"
+      ],
+      "contraindications": [
+        "Propofol/yumurta/soya alerjisi (rölatif)",
+        "Hipotansiyon (rölatif)",
+        "Çocukta YBÜ sedasyonu (uzun süreli — PRIS)"
+      ],
+      "dosage": {
+        "adult": "İndüksiyon: 1,5-2,5 mg/kg IV. İdame: 4-12 mg/kg/saat infüzyon. Sedasyon: 0,3-3 mg/kg/saat",
+        "pediatric": "≥3 yaş: 2,5-3,5 mg/kg indüksiyon. YBÜ uzun süre PRIS riski",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Enjeksiyon yerinde ağrı (büyük damar tercih)",
+          "Hipotansiyon",
+          "Apne",
+          "Bradikardi"
+        ],
+        "serious": [
+          "Propofol infüzyon sendromu — PRIS (laktik asidoz, rabdomiyoliz, AKİ, kardiyak kollaps)",
+          "Anafilaksi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Opioidler/BDZ",
+          "note": "Sinerjik depresyon — doz azalt"
+        },
+        {
+          "drug": "Antihipertansifler",
+          "note": "Hipotansiyon"
+        }
+      ],
+      "antidote": "Spesifik yok. Solunum/dolaşım desteği. PRIS'te diyaliz/ECMO",
+      "pregnancy": "B — endikasyon varsa",
+      "breastfeeding": "Tek doz sonrası 4-6 saat ara",
+      "storage": "25°C altında, dondurma. Emülsiyon — sallayarak kullan. Açıldıktan sonra 6 saat",
+      "notes": "Sadece anestezi/YBÜ eğitimi olan ve havayolu yönetimi yapabilen hekim tarafından. Asepsi şart (yağ emülsiyonu bakteri için besi yeri). >48 saat infüzyon PRIS riski — laktat takibi.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "ketalar",
+      "tradeName": "Ketalar (Ketamin)",
+      "otherTradeNames": [
+        "Ketalar 50 mg/mL"
+      ],
+      "activeIngredient": "Ketamin HCl",
+      "atc": "N01AX03",
+      "form": "Flakon (IV/IM)",
+      "strength": "50 mg/mL — 10 mL, 500 mg/10 mL",
+      "indications": [
+        "Anestezi indüksiyonu (özellikle hemodinamik unstabilde)",
+        "Prosedürel sedasyon (çocukta)",
+        "Akut astım atağı (refrakter)",
+        "Refrakter ağrı"
+      ],
+      "contraindications": [
+        "Şiddetli HT/iskemik kalp hastalığı (rölatif)",
+        "Yükselmiş İKB (tartışmalı)",
+        "Aktif psikoz",
+        "Tiroid fırtına"
+      ],
+      "dosage": {
+        "adult": "Anestezi indüksiyonu: 1-2 mg/kg IV. Sedasyon: 0,2-0,5 mg/kg IV. IM: 4-5 mg/kg",
+        "pediatric": "1-2 mg/kg IV veya 4-5 mg/kg IM",
+        "renal": "Doz azaltılabilir",
+        "hepatic": "Doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Taşikardi",
+          "HT",
+          "Tükürük artışı",
+          "Nistagmus",
+          "Tonik-klonik hareketler"
+        ],
+        "serious": [
+          "Çıkış reaksiyonları (rüya, halüsinasyon — BDZ ön premedikasyon)",
+          "Larengospazm",
+          "Apne (hızlı IV)",
+          "Şiddetli HT"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Tiyofilin",
+          "note": "Konvülsiyon eşiği düşer"
+        },
+        {
+          "drug": "BDZ",
+          "note": "Çıkış reaksiyonlarını azaltır — kombine tercih"
+        }
+      ],
+      "antidote": "Spesifik yok. Çıkış reaksiyonları için midazolam",
+      "pregnancy": "C — gerekirse",
+      "breastfeeding": "Tek doz sonrası 12 saat ara",
+      "storage": "25°C altında, ışıktan korunur. Yeşil reçeteli, kilitli",
+      "notes": "Bronkodilatör etki — astım indüksiyonunda iyi. Hemodinami koruyucu. Tükürüğü azaltmak için atropin/glikopirolat ön premedikasyon. Çıkış halüsinasyonları için ortamı sessiz tut.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "esmeron",
+      "tradeName": "Esmeron (Rokuronyum)",
+      "otherTradeNames": [
+        "Rokuronyum bromür generik"
+      ],
+      "activeIngredient": "Rokuronyum bromür",
+      "atc": "M03AC09",
+      "form": "Flakon (IV)",
+      "strength": "10 mg/mL — 5 mL, 10 mL",
+      "indications": [
+        "Anestezide kas gevşemesi",
+        "Hızlı seri entübasyon (RSI)",
+        "Mekanik ventilasyon kolaylaştırma"
+      ],
+      "contraindications": [
+        "Rokuronyum/aminosteroid kas gevşetici alerjisi"
+      ],
+      "dosage": {
+        "adult": "Standart entübasyon: 0,6 mg/kg IV. RSI: 1,0-1,2 mg/kg. İdame: 0,15 mg/kg gerekirse",
+        "pediatric": "0,6 mg/kg IV (RSI: 1 mg/kg)",
+        "renal": "Doz ayarı genelde gerekmez",
+        "hepatic": "Etki uzayabilir"
+      },
+      "sideEffects": {
+        "common": [
+          "Hipertansiyon (geçici)",
+          "Taşikardi",
+          "Enjeksiyon yerinde ağrı"
+        ],
+        "serious": [
+          "Anafilaksi",
+          "Uzayan paralizi",
+          "Malign hipertermi (genetik yatkınlıkta)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Aminoglikozid/klindamisin",
+          "note": "Etki uzar"
+        },
+        {
+          "drug": "Volatil anestezik",
+          "note": "Etki artar — doz azalt"
+        },
+        {
+          "drug": "Magnezyum sülfat",
+          "note": "Etki belirgin uzar"
+        }
+      ],
+      "antidote": "Sugammadeks (Bridion) 2-4 mg/kg IV — spesifik. Veya neostigmin + glikopirolat (kısmen etkili)",
+      "pregnancy": "C — endikasyonla",
+      "breastfeeding": "Tek doz uyumlu (anestezi sonrası)",
+      "storage": "2-8°C buzdolabı. Oda ısısında en fazla 60 gün",
+      "notes": "MUTLAKA havayolu yönetimi yapabilen hekim tarafından. Tam paralizi — ventilasyon zorunlu. Etki süresi 30-60 dk.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "lidokain",
+      "tradeName": "Aritmal (Lidokain)",
+      "otherTradeNames": [
+        "Jetokain",
+        "Xilo (oral sprey)",
+        "Lidocaine generik"
+      ],
+      "activeIngredient": "Lidokain HCl",
+      "atc": "N01BB02",
+      "form": "Ampul (%1, %2) / Sprey / Pomad / Flaster",
+      "strength": "%1 (10 mg/mL), %2 (20 mg/mL), %5 hiperbarik (spinal), %10 sprey",
+      "indications": [
+        "Lokal anestezi (infiltrasyon, sinir bloğu)",
+        "Ventriküler aritmi (alternatif amiodarona)",
+        "Epidural/spinal anestezi"
+      ],
+      "contraindications": [
+        "Lidokain/amid lokal anestezik alerjisi",
+        "Şiddetli kalp blokları (sistemik kullanımda)",
+        "Stokes-Adams sendromu",
+        "WPW sendromu (sistemik)"
+      ],
+      "dosage": {
+        "adult": "Lokal infiltrasyon: max 4,5 mg/kg (adrenalinsiz) / 7 mg/kg (adrenalinli). VT: 1-1,5 mg/kg IV bolus + 1-4 mg/dk infüzyon",
+        "pediatric": "Aynı max sınırlar. VT: 1 mg/kg IV",
+        "renal": "Doz ayarı genelde gerekmez",
+        "hepatic": "Belirgin doz azaltılır"
+      },
+      "sideEffects": {
+        "common": [
+          "Geçici hipotansiyon",
+          "Baş dönmesi"
+        ],
+        "serious": [
+          "LAST (lokal anestezik sistemik toksisitesi) — konvülsiyon, kardiyak arrest",
+          "Methemoglobinemi",
+          "Bradikardi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Beta blokerler",
+          "note": "Lidokain düzeyi artar"
+        },
+        {
+          "drug": "Simetidin",
+          "note": "Lidokain düzeyi artar"
+        },
+        {
+          "drug": "Amiodaron",
+          "note": "QT uzaması"
+        }
+      ],
+      "antidote": "LAST: %20 lipid emülsiyonu (intralipid) 1,5 mL/kg IV bolus + 0,25 mL/kg/dk infüzyon. Konvülsiyon: BDZ",
+      "pregnancy": "B — gerekirse",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında, ışıktan korunur. Adrenalinli formlar dondurulmaz",
+      "notes": "Maksimum dozu aşmayın. IV/IM enjeksiyon öncesi aspirasyon yapın (intravasküler kaçışı önlemek için). LAST için lipid emülsiyonu acil servis kitinde bulunmalı.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "xarelto",
+      "tradeName": "Xarelto",
+      "otherTradeNames": [
+        "Rivaroks",
+        "Rivaroxaban generik"
+      ],
+      "activeIngredient": "Rivaroksaban",
+      "atc": "B01AF01",
+      "form": "Film tablet",
+      "strength": "2,5 mg, 10 mg, 15 mg, 20 mg",
+      "indications": [
+        "Non-valvüler AF'de inme önleme",
+        "DVT/PE tedavi ve profilaksi",
+        "AKS sonrası (ASA ile düşük doz)",
+        "Postoperatif VTE profilaksisi"
+      ],
+      "contraindications": [
+        "Aktif klinik anlamlı kanama",
+        "Yüksek kanama riski lezyon",
+        "Mekanik kalp kapağı (kontrendike)",
+        "Gebelik",
+        "Ciddi karaciğer yetmezliği (Child-Pugh B-C)"
+      ],
+      "dosage": {
+        "adult": "AF: 20 mg/gün (15 mg GFR 15-50). DVT/PE: 15 mg 2x/gün 3 hafta + 20 mg/gün idame",
+        "pediatric": "Çocukta kullanım çocuk dozajına uygun, spesifik klinik bağlamla",
+        "renal": "GFR <15: kullanılmaz. 15-50: 15 mg/gün (AF için)",
+        "hepatic": "Child-Pugh B-C kontrendike"
+      },
+      "sideEffects": {
+        "common": [
+          "Kanama eğilimi",
+          "Anemi",
+          "Bulantı"
+        ],
+        "serious": [
+          "Major kanama (GİS, intrakranial)",
+          "Akut hepatit (nadir)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Güçlü CYP3A4/P-gp inhibitörü (ketokonazol, ritonavir)",
+          "note": "Rivaroksaban düzeyi artar — kontrendike"
+        },
+        {
+          "drug": "Güçlü CYP3A4 induktörü (rifampisin, fenitoin)",
+          "note": "Düzeyi azalır"
+        },
+        {
+          "drug": "Antiplatelet/NSAİİ",
+          "note": "Kanama riski"
+        }
+      ],
+      "antidote": "Andeksanet alfa (Andexxa) — Türkiye'de sınırlı. Alternatif: 4-faktör PCC (Octaplex 50 IU/kg). Aktif kömür ilk 2-4 saatte alımda.",
+      "pregnancy": "C — KONTRENDİKE",
+      "breastfeeding": "Önerilmez",
+      "storage": "30°C altında",
+      "notes": "Mekanik kapakta KULLANILMAZ (warfarin tek seçenek). 15-20 mg yemekle alınır (emilim artar). Cerrahi öncesi 24-48 saat kesilir.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "prednol",
+      "tradeName": "Prednol",
+      "otherTradeNames": [
+        "Solu-Medrol (IV)",
+        "Medrol"
+      ],
+      "activeIngredient": "Metilprednizolon",
+      "atc": "H02AB04",
+      "form": "Tablet / Flakon (IV/IM)",
+      "strength": "4 mg, 16 mg tablet; 20-40-125-250-500 mg, 1 g flakon",
+      "indications": [
+        "Astım/KOAH alevlenmesi",
+        "Anafilaksi (yardımcı)",
+        "Otoimmün hastalıklar",
+        "Beyin ödemi",
+        "Adrenal yetmezlik",
+        "Transplant reddi"
+      ],
+      "contraindications": [
+        "Sistemik mantar enfeksiyonu",
+        "Canlı aşı uygulaması yakın dönemde"
+      ],
+      "dosage": {
+        "adult": "Astım: 40-125 mg IV 6 saatte bir. Anafilaksi: 125 mg IV. Pulse: 1 g/gün 3 gün",
+        "pediatric": "1-2 mg/kg/doz IV (max 60 mg)",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı genelde gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Hiperglisemi",
+          "Hipertansiyon",
+          "Mood değişiklikleri",
+          "İştah artışı"
+        ],
+        "serious": [
+          "Adrenal supresyon",
+          "Cushingoid görünüm (uzun süreli)",
+          "Osteoporoz",
+          "Peptik ülser",
+          "İmmunosupresyon",
+          "Avasküler nekroz",
+          "Psikoz (yüksek doz)"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "NSAİİ",
+          "note": "Peptik ülser riski"
+        },
+        {
+          "drug": "Diüretik",
+          "note": "Hipokalemi"
+        },
+        {
+          "drug": "Canlı aşı",
+          "note": "Etkin değil, enfeksiyon riski"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "C — gerektiğinde",
+      "breastfeeding": "Yüksek doz: 4 saat ara",
+      "storage": "25°C altında. Sulandırıldıktan sonra 48 saat",
+      "notes": "Uzun süreli kullanımda azaltılarak kesilir (adrenal supresyon). Stres dozu konsültasyon (cerrahi/enfeksiyon).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "onadron-dexa",
+      "tradeName": "Onadron",
+      "otherTradeNames": [
+        "Decort",
+        "Dexa"
+      ],
+      "activeIngredient": "Deksametazon",
+      "atc": "H02AB02",
+      "form": "Tablet / Ampul / Göz damlası",
+      "strength": "0,75 mg tablet, 4-8 mg/2 mL ampul",
+      "indications": [
+        "Beyin ödemi",
+        "Anafilaksi (yardımcı)",
+        "Bulantı/kusma (kemo)",
+        "Krup",
+        "Akut KOAH",
+        "COVID-19 (hospitalize, O2 ihtiyacı olan)"
+      ],
+      "contraindications": [
+        "Sistemik mantar enfeksiyonu",
+        "Canlı aşı"
+      ],
+      "dosage": {
+        "adult": "Beyin ödemi: 10 mg IV yükleme + 4 mg 6 saatte bir. Krup: 0,15-0,6 mg/kg PO/IM tek doz. COVID: 6 mg/gün 10 gün",
+        "pediatric": "0,15-0,6 mg/kg/doz (krup), max 16 mg/gün",
+        "renal": "Doz ayarı gerekmez",
+        "hepatic": "Doz ayarı genelde gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Hiperglisemi",
+          "İnsomnia",
+          "Mood değişikliği",
+          "İştah artışı"
+        ],
+        "serious": [
+          "Adrenal supresyon",
+          "İmmunosupresyon",
+          "Peptik ülser",
+          "Psikoz"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "NSAİİ",
+          "note": "Peptik ülser"
+        },
+        {
+          "drug": "Antikoagülan",
+          "note": "Etkisini değiştirebilir"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "C — gerekirse",
+      "breastfeeding": "Yüksek doz: 4 saat ara",
+      "storage": "25°C altında, ışıktan korunur",
+      "notes": "Anti-emetik özelliği güçlü. Krup'ta tek doz çok etkili. COVID'de sadece hipoksili hastada (oda havasında değil).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "tamiflu",
+      "tradeName": "Tamiflu",
+      "otherTradeNames": [
+        "Oseltamivir generik"
+      ],
+      "activeIngredient": "Oseltamivir fosfat",
+      "atc": "J05AH02",
+      "form": "Kapsül / Süspansiyon",
+      "strength": "30-45-75 mg kapsül, 6 mg/mL süsp",
+      "indications": [
+        "İnfluenza A/B tedavi (semptom başlangıcından 48 saat içinde)",
+        "Postekspoz profilaksi"
+      ],
+      "contraindications": [
+        "Oseltamivir alerjisi"
+      ],
+      "dosage": {
+        "adult": "Tedavi: 75 mg 2x/gün 5 gün. Profilaksi: 75 mg/gün 10 gün",
+        "pediatric": "≥1 yaş: kilo bazlı (15 kg: 30 mg, 15-23: 45 mg, 23-40: 60 mg, >40: 75 mg) 2x/gün",
+        "renal": "GFR 30-60: 30 mg 2x/gün. <30: 30 mg/gün",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı/kusma",
+          "Baş ağrısı",
+          "İnsomnia"
+        ],
+        "serious": [
+          "Nöropsikiyatrik olaylar (delirium, halüsinasyon — özellikle çocuk)",
+          "Stevens-Johnson",
+          "Anafilaksi"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Probenesid",
+          "note": "Oseltamivir düzeyi artar"
+        },
+        {
+          "drug": "Canlı influenza aşısı",
+          "note": "2 hafta önce kesilmeli"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "C — yarar/risk değerlendirmesi (gebelikte influenza ciddi)",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "İlk 48 saatte başlanırsa en etkili. Yüksek riskli hastalarda (gebe, immün baskılı, kronik hastalık) profilaksi.",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "zovirax",
+      "tradeName": "Zovirax",
+      "otherTradeNames": [
+        "Asiclovir",
+        "Cyclovir",
+        "Hervirax"
+      ],
+      "activeIngredient": "Asiklovir",
+      "atc": "J05AB01",
+      "form": "Tablet / Krem / Flakon (IV) / Süspansiyon",
+      "strength": "200-400-800 mg tablet, 250-500 mg flakon, 200 mg/5 mL süsp",
+      "indications": [
+        "Herpes simpleks (HSV-1, HSV-2)",
+        "Varicella zoster (zona, su çiçeği)",
+        "Herpes ensefaliti (IV)",
+        "Neonatal HSV"
+      ],
+      "contraindications": [
+        "Asiklovir/valasiklovir alerjisi"
+      ],
+      "dosage": {
+        "adult": "HSV oral: 400 mg 5x/gün 5-10 gün. Zoster: 800 mg 5x/gün 7-10 gün. HSV ensefalit IV: 10 mg/kg 8 saatte bir 14-21 gün",
+        "pediatric": "Çocuk yaşa/endikasyona göre, ensefalit: 10-20 mg/kg/doz IV",
+        "renal": "GFR'a göre belirgin doz ayarı — IV'de nefrotoksisite riski yüksek",
+        "hepatic": "Doz ayarı gerekmez"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Baş ağrısı",
+          "Döküntü"
+        ],
+        "serious": [
+          "Akut böbrek hasarı (kristalüri — IV'de bol hidrasyon)",
+          "Nörotoksisite (yaşlı, AKI)",
+          "Trombositopenik purpura"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Probenesid",
+          "note": "Asiklovir düzeyi artar"
+        },
+        {
+          "drug": "Mikofenolat",
+          "note": "Düzeyleri artar"
+        }
+      ],
+      "antidote": "Spesifik yok. AKI'de hemodiyaliz etkili",
+      "pregnancy": "B — gerekirse",
+      "breastfeeding": "Uyumlu",
+      "storage": "25°C altında",
+      "notes": "IV verirken HIZLI BOLUS YOK — en az 1 saatte infüze + bol hidrasyon (kristalüri/AKI önleme).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    },
+    {
+      "id": "diflucan",
+      "tradeName": "Diflucan",
+      "otherTradeNames": [
+        "Triflucan",
+        "Lumen",
+        "Fungimax"
+      ],
+      "activeIngredient": "Flukonazol",
+      "atc": "J02AC01",
+      "form": "Kapsül / Süspansiyon / Flakon (IV)",
+      "strength": "50-100-150-200 mg kapsül, 100 mg/50 mL flakon",
+      "indications": [
+        "Kandidiyazis (orofaringeal, vajinal, sistemik)",
+        "Kriptokok menenjit",
+        "Profilaksi (immün baskılı)"
+      ],
+      "contraindications": [
+        "Flukonazol/azol alerjisi",
+        "QT uzatan ilaçlarla (terfenadin, sisaprid, eritromisin, kinidin) birlikte"
+      ],
+      "dosage": {
+        "adult": "Vajinal kandida: 150 mg tek doz. Sistemik: 400-800 mg yükleme + 200-400 mg/gün. Kriptokok: 400-800 mg/gün",
+        "pediatric": "3-12 mg/kg/gün (max 400 mg)",
+        "renal": "GFR <50: doz %50 azaltılır",
+        "hepatic": "Aktif yetmezlikte dikkatli"
+      },
+      "sideEffects": {
+        "common": [
+          "Bulantı",
+          "Baş ağrısı",
+          "Karın ağrısı",
+          "Döküntü"
+        ],
+        "serious": [
+          "Hepatotoksisite",
+          "QT uzaması/Torsades",
+          "Stevens-Johnson"
+        ]
+      },
+      "interactions": [
+        {
+          "drug": "Warfarin",
+          "note": "INR belirgin artar"
+        },
+        {
+          "drug": "Sülfonilüre (glipizid, gliklazid)",
+          "note": "Hipoglisemi"
+        },
+        {
+          "drug": "Statin",
+          "note": "Rabdomiyoliz riski"
+        },
+        {
+          "drug": "Fenitoin",
+          "note": "Fenitoin düzeyi artar"
+        }
+      ],
+      "antidote": "Spesifik yok",
+      "pregnancy": "Düşük doz (vajinal kandida) D yüksek doz; dikkat",
+      "breastfeeding": "Az süte geçer, uyumlu",
+      "storage": "25°C altında",
+      "notes": "Güçlü CYP2C9/CYP3A4 inhibitörü — ilaç etkileşimleri kritik. KCFT takibi (uzun süre).",
+      "source": "TİTCK KÜB referanslı — test verisi"
+    }
+  ]
+}

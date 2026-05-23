@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Pipeline çıktı/durumları (lokal)
+data/.enrich-progress.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# AI key/credential dosyaları (kazara push edilmesin)
+.env
+.env.local
+*.key
+secret*
