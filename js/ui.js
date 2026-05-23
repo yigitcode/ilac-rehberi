@@ -27,16 +27,23 @@
   }
 
   function makeResultItem(d) {
+    const isLite = d.verified === false && !d.aiGenerated;
+    const isAi   = d.aiGenerated && !d.userVerified;
     const li = document.createElement('li');
-    li.className = 'result-item' + (d.verified === false ? ' result-lite' : '');
+    li.className = 'result-item' + (isLite ? ' result-lite' : '') + (isAi ? ' result-ai' : '');
     li.setAttribute('role', 'button');
     li.dataset.id = d.id;
     const others = (d.otherTradeNames && d.otherTradeNames.length)
       ? `<div class="result-aliases">ayrıca: ${esc(d.otherTradeNames.join(', '))}</div>`
       : '';
-    const meta = d.verified === false
-      ? `<span class="lite-badge">temel info</span> ${esc(d.atc || '')}${d.manufacturer ? ' &middot; ' + esc(d.manufacturer) : ''}`
-      : `${esc(d.form || '')}${d.strength ? ' &middot; ' + esc(d.strength) : ''}`;
+    let meta;
+    if (isLite) {
+      meta = `<span class="lite-badge">temel info</span> ${esc(d.atc || '')}${d.manufacturer ? ' &middot; ' + esc(d.manufacturer) : ''}`;
+    } else if (isAi) {
+      meta = `<span class="ai-badge">AI özeti</span> ${esc(d.form || '')}${d.strength ? ' &middot; ' + esc(d.strength) : ''}`;
+    } else {
+      meta = `${esc(d.form || '')}${d.strength ? ' &middot; ' + esc(d.strength) : ''}`;
+    }
     li.innerHTML = `
       <div class="result-name">${esc(d.tradeName)}</div>
       <div class="result-ingredient">${esc(d.activeIngredient)}</div>
@@ -85,19 +92,28 @@
 
   let _liteExpanded = false;
 
+  function hasDetailData(d) {
+    return d.verified === true || d.aiGenerated === true;
+  }
+
   function renderAlphabetical(drugs) {
     els.results.innerHTML = '';
     if (!drugs || drugs.length === 0) {
       setStatus('İlaç bulunamadı');
       return;
     }
-    const verified = drugs.filter((d) => d.verified !== false);
-    const lite     = drugs.filter((d) => d.verified === false);
+    const detailed = drugs.filter(hasDetailData);
+    const lite     = drugs.filter((d) => !hasDetailData(d));
+    const curatedN = detailed.filter((d) => !d.aiGenerated).length;
+    const aiN      = detailed.filter((d) => d.aiGenerated).length;
 
-    els.status.innerHTML = `Detaylı: ${verified.length} ilaç${lite.length ? ` &middot; TİTCK temel: ${lite.length}` : ''}`;
+    let statusHtml = `Detaylı: ${detailed.length} ilaç`;
+    if (aiN) statusHtml += ` <span class="status-sub">(${curatedN} elle + ${aiN} AI)</span>`;
+    if (lite.length) statusHtml += ` &middot; TİTCK temel: ${lite.length}`;
+    els.status.innerHTML = statusHtml;
 
     const frag = document.createDocumentFragment();
-    appendAlphabetical(frag, verified);
+    appendAlphabetical(frag, detailed);
 
     if (lite.length > 0) {
       const toggle = document.createElement('li');
@@ -105,8 +121,8 @@
       toggle.setAttribute('role', 'button');
       toggle.dataset.action = 'toggle-lite';
       toggle.textContent = _liteExpanded
-        ? `TİTCK listesini gizle (${lite.length})`
-        : `TİTCK listesini göster (${lite.length} ilaç — sadece temel bilgi)`;
+        ? `TİTCK temel listesini gizle (${lite.length})`
+        : `TİTCK temel listesini göster (${lite.length} ilaç — sadece ad/etken)`;
       frag.appendChild(toggle);
 
       if (_liteExpanded) {
@@ -176,18 +192,40 @@
   }
 
   function renderDetail(d) {
-    if (d.verified === false) {
+    // Lite kayıt (sadece ad/etken) → kısa template
+    // AI üretimi tüm alanları dolu → tam detay (üstte AI uyarısı ile)
+    if (d.verified === false && !d.aiGenerated) {
       return renderLiteDetail(d);
     }
     const aliasesBlock = (d.otherTradeNames && d.otherTradeNames.length)
       ? `<div class="detail-aliases"><strong>Diğer ticari adlar:</strong> ${esc(d.otherTradeNames.join(', '))}</div>`
       : '';
-    const verifyBlock = (d.aiGenerated && !d.userVerified) ? `
-      <div class="ai-banner">
-        <strong>AI tarafından üretildi</strong> — Bu kayıt Claude tarafından otomatik özetlenmiştir.
-        KÜB ile karşılaştırarak doğrulamadan klinik karar için kullanmayın.
-        <button class="verify-btn" data-action="verify" data-id="${esc(d.id)}">KÜB ile karşılaştırdım, doğrula</button>
-      </div>` : '';
+    let aiBannerHtml = '';
+    if (d.aiGenerated && !d.userVerified) {
+      const suspect = d.suspectFields || [];
+      const suspectMap = {
+        'dosage.adult':       'Erişkin doz',
+        'dosage.pediatric':   'Pediatrik doz',
+        'antidote':           'Antidot',
+        'contraindications':  'Kontrendikasyonlar',
+      };
+      const suspectLabels = suspect.map((f) => suspectMap[f] || f);
+
+      const crossInfo = d.crossVerified === true
+        ? `<div class="cross-ok">✓ İki AI modeli kritik alanlarda uyumlu</div>`
+        : d.crossVerified === false
+          ? `<div class="cross-warn">⚠ Şüpheli alanlar (AI modelleri uyumsuz): <strong>${esc(suspectLabels.join(', '))}</strong> — özellikle dikkatli okuyun ve KÜB ile karşılaştırın</div>`
+          : '';
+
+      aiBannerHtml = `
+        <div class="ai-banner">
+          <strong>AI tarafından üretildi</strong> — Bu kayıt otomatik özetlenmiştir.
+          KÜB ile karşılaştırarak doğrulamadan klinik karar için kullanmayın.
+          ${crossInfo}
+          <button class="verify-btn" data-action="verify" data-id="${esc(d.id)}">KÜB ile karşılaştırdım, doğrula</button>
+        </div>`;
+    }
+    const verifyBlock = aiBannerHtml;
     const userVerifiedBlock = d.userVerified ? `
       <div class="verified-banner">
         ✓ Doğrulandı (lokal olarak işaretli)
