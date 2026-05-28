@@ -12,18 +12,28 @@ REM     2. Gemini API key'i bu dosyanin asagisinda ayarla
 REM ============================================================
 
 REM === GEMINI API KEY ===
-REM Asagidaki satira kendi API key'ini yapistir (https://aistudio.google.com/apikey)
-set GOOGLE_API_KEY=AIza...buraya-key-yapistir...
+REM Key user-level environment variable'da saklaniyor (kalici).
+REM Yeniden ayarlamak icin (PowerShell):
+REM   [Environment]::SetEnvironmentVariable("GOOGLE_API_KEY", "AIza...", "User")
+if not defined GOOGLE_API_KEY (
+    echo HATA: GOOGLE_API_KEY tanimli degil.
+    echo Lutfen PowerShell'de su komutu calistir:
+    echo   [Environment]::SetEnvironmentVariable("GOOGLE_API_KEY", "AIza...", "User"^)
+    echo ve yeni bir cmd penceresinde tekrar baslat.
+    pause
+    exit /b 1
+)
 
 REM === Calisma dizini ===
 cd /d "%~dp0"
 
-REM Daemon modunda calistir
+REM Daemon modunda calistir (-u: stdout buffering kapali, log canli akar)
+set PYTHONIOENCODING=utf-8
 echo Daemon modu basliyor. Kapatmak icin: Ctrl+C
 echo Quota dolunca uyur, reset sonra otomatik devam eder.
 echo.
 
-python scripts\enrich-drugs.py --backend gemini --daemon
+python -u scripts\enrich-drugs.py --backend gemini --daemon
 
 echo.
 echo Script sonlandi. Devam etmek icin bu dosyayi tekrar calistir.

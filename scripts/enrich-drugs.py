@@ -54,6 +54,7 @@ GENEL KULLANIM:
   Klinik kullanım için MUTLAKA hemşire/eczacı tarafından doğrulanması gerekir.
 """
 import os
+import re
 import sys
 import json
 import time
