@@ -44,6 +44,10 @@ while true; do
             echo "[$(date '+%H:%M:%S')] PUSH OK - $curr_count ilac canlida"
         fi
         pushed_for_count=$curr_count
+
+        # Quota doldu, PC'yi kapat (60 sn pencere - iptal: shutdown /a)
+        echo "[$(date '+%H:%M:%S')] SHUTDOWN: 60 saniye sonra PC kapanacak (iptal: shutdown /a)"
+        shutdown //s //t 60 //c "Gemini quota doldu, ilac batch tamamlandi" 2>&1 | head -2
     fi
 
     sleep 60
